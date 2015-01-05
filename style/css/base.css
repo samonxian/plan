@@ -1,0 +1,128 @@
+.b{border:1px solid red;}
+/*CSS reset*/
+html{
+	color:#000;font-size:13px;font-family:"宋体";-webkit-text-size-adjust:none;
+	/* 英文自动换行 */
+	word-break: break-all; 
+	word-wrap:break-word;
+}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}
+table{border-collapse:collapse;border-spacing:0;}
+fieldset,img{border:none;vertical-align:bottom;}
+address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}
+del,ins{text-decoration:none;}
+li{list-style:none;list-style-position:outside;}
+caption{text-align:left;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}
+q:before,q:after{content:'';}
+abbr,acronym{border:0;font-variant:normal;}
+sup{vertical-align:baseline;}
+sub{vertical-align:baseline;}
+legend{color:#000;}
+/*****************去除IE中点击数a的虚线****************************/
+a,button{bblr:expression(this.onFocus=this.blur()); }
+/******************去除FF中点击数a的虚***************************/
+a,button,input{outline:none;color:black;}
+
+a{text-decoration:none;}
+
+input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}
+input,button,textarea,select{*font-size:100%;}
+input.button {    /********解决按钮在IE中两边被拉伸的bug**********/
+    padding: 0 .25em;
+    width: auto;
+    _width: 0;
+    overflow:visible !ie;
+}
+input[type=file]{
+	background-color: #fff;
+	border: 1px solid #ccc;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+	-webkit-transition: border linear .2s,box-shadow linear .2s;
+	-moz-transition: border linear .2s,box-shadow linear .2s;
+	-o-transition: border linear .2s,box-shadow linear .2s;
+	transition: border linear .2s,box-shadow linear .2s;
+	border-radius: 4px;
+
+}
+
+/*文字排版*/
+.fb{font-weight:bold}
+.fn{font-weight:normal;}
+.indent_2{text-indent:2em;}
+.underline{text-decoration:underline;}/*添加下划线*/
+.no_unl{text-decoration:none;}
+.cp{cursor:pointer;}
+.b0{border:0;}
+.f0{font-size:0;}
+.m0{margin:0;}
+.ml0{margin-left:0;}
+.mt0{margin-top:0;}
+.p0{padding:0;}
+.pl0{padding-left:0;}
+.pt0{padding-top:0;}
+
+
+/*定位*/
+.tl{text-align:left;}
+.tc{text-align:center;}
+.tr{text-align:right;}
+.bc{margin-left:0;margin-right:0;}
+.fl{float:left;display:inline;}
+.fr{float:right;display:inline;}
+.cb{clear:both;}
+.clearfix:after{content:".";display:block;height:0;line-height:0;clear:both;visibility:hidden;}
+.clearfix{zoom:1;}
+.vm{verticle-align:middle;}
+.relative{position:relative;}
+.absolute{position:absolute;}
+.zoom{zoom:1;}
+.hidden{visibility:hidden;}
+.block{display:block;}
+.none{display:none;}
+.width100{width:100%}
+.height100{height:100%}
+/** 缩进 **/
+.ti5{text-indent:5px;}
+.ti10{text-indent:10px;}
+.ti15{text-indent:15px;}
+.ti20{text-indent:20px;}
+/** 边距 **/
+.m10{margin:10px;}
+.m15{margin:15px;}
+.m5{margin:5px;}
+.mt5{margin-top:5px;}
+.mt10{margin-top:10px;}
+.mt15{margin-top:15px;}
+.mb5{margin-bottom:5px;}
+.mb10{margin-bottom:10px;}
+.mb15{margin-bottom:15px;}
+.ml5{margin-left:5px;}
+.ml10{margin-left:10px;}
+.ml15{margin-left:15px;}
+.mr5{margin-right:5px;}
+.mr10{margin-right:10px;}
+.mr15{margin-right:15px;}
+.p10{padding:10px;}
+.p15{padding:15px;}
+.p5{padding:5px;}
+.pt5{padding-top:5px;}
+.pt10{padding-top:10px;}
+.pt15{padding-top:15px;}
+.pb5{padding-bottom:5px;}
+.pb10{padding-bottom:10px;}
+.pb15{padding-bottom:15px;}
+.pl5{padding-left:5px;}
+.pl10{padding-left:10px;}
+.pl15{padding-left:15px;}
+.pr5{padding-right:5px;}
+.pr10{padding-right:10px;}
+.pr15{padding-right:15px;}
+
+.pointer{cursor:pointer;}
+#QajaxTable_msg{border:1px solid #ccc;background:#eee;line-height:3em;}
+#QajaxTable_msg  img{margin-right:10px;vertical-align:middle;margin-left:6px;}
+.onActived{display:none;}
+.repeatHtml{display:none;}

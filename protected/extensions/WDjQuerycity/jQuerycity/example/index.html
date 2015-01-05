@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <select id="province">
+        <option  value="0">请选择省</option>
+    </select>
+    <select id="city">
+        <option  value="0">请选择市</option>
+    </select>
+    <select id="area">
+        <option  value="0">请选择区</option>
+    </select>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../src/jquerycity.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            $("body").jQueryCity({
+                selectId : {
+                    province : "province",
+                    city     : "city" ,
+                    area     : "area"
+                },
+                default : {
+                    province : "浙江省" ,
+                    city : "杭州市" ,
+                    area : "西湖区"
+                }
+            })
+        })
+
+    </script>
+</body>
+</html>

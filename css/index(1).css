@@ -1,0 +1,559 @@
+.bbs-table td.tit a,.game-news .news-list li,.game-pro .pro .arrow,.game-pro .about em{
+	background: url(../images/icons.png) no-repeat;
+}
+.game-pro{
+	height:350px;
+	color:#9e9e9e;
+}
+.game-pro .title{
+	height:30px;
+	margin-bottom:10px;
+}
+.game-pro h1{
+	font:26px/30px 微软雅黑,黑体,宋体;
+	color:#252525;
+}
+.game-pro h1 span{
+	color:#fff;
+	background:#f33744;
+	padding:0 10px;
+	font-size:18px;
+	margin-left:5px;
+}
+.game-pro .box{
+	background:#f0f0f0;
+	height:260px;
+}
+.game-pro .show-img img,.game-pro .show-img{
+	width:660px;
+	height:260px;
+	display: block;
+}
+.game-pro .pro{
+	width:337px;
+	padding:1px 3px 0 0;
+}
+.game-pro .pro .text{
+	background:#fff;
+	height:220px;
+	overflow: hidden;
+	border-bottom:1px #ddd solid;
+}
+.s-title{
+	height:36px;
+}
+.s-title h3{
+	float:left;
+	padding:0 15px;
+	background: #f0f0f0;
+}
+h3.tit{
+	font:bold 14px/36px 宋体;
+	color:#2d2d2d;
+}
+h3.tit span{
+	color:#1dacf0;
+}
+.game-pro .pro .arrow{
+	width:14px;
+	height:15px;
+	overflow: hidden;
+	position: absolute;
+	left:324px;
+	top:207px;
+	background-position: 0 -668px;
+}
+.game-pro .pro-text{
+	padding:5px 15px 0;
+	line-height:24px;
+	color:#303338;
+	height: 168px;
+	overflow: hidden;
+	text-indent: 2em;
+}
+.game-pro .about{
+	text-align: center;
+	padding:10px 0;
+	height:18px;
+	overflow: hidden;
+	color:#9e9e9e;
+}
+.game-pro .about p{
+	width:160px;
+	float: left;
+	line-height: 18px;
+}
+.game-pro .about em{
+	padding-left: 20px;
+}
+.game-pro .about .commt em{
+	background-position: -45px -710px;
+}
+.game-pro .about .commt a{
+	text-decoration: underline;
+}
+.game-pro .about .players em{
+	background-position: -45px -733px;
+}
+.game-pro .about .players span{
+	padding:0 6px;
+	border:1px #fe7b2d solid;
+	background: #fff;
+	margin:0 5px;
+}
+.game-pro .about .players span a{
+	color:#fe7b2d;
+}
+.game-pro .about .players span a:hover{
+	color:red;
+}
+.game-pro .tool{
+	height:33px;
+	background:#f5f5f5;
+	border-top:1px #ddd solid;
+	margin-top:10px;
+	padding-top:7px;
+	line-height:27px;
+}
+
+.about-game li{
+	padding-left:30px;
+	float: left;
+	display: inline;
+	line-height: 27px;
+	margin-left:10px;
+}
+.about-game a{
+	color:#2d2d2d;
+}
+/*.about-game li.name{
+	background-position: -40px -517px;
+}
+.about-game li.company{
+	background-position: -40px -547px;
+}
+.about-game li.type{
+	background-position: -40px -579px;
+}
+.about-game li.model{
+	background-position: -40px -611px;
+}
+.about-game li.img{
+	background-position: -40px -641px;
+}
+.about-game li.story{
+	background-position: -40px -672px;
+}*/
+.tool .enter{
+	margin-right:15px;
+}
+
+span.count{
+	padding-top:10px;
+	margin:0 15px;
+}
+span.count strong{
+	color:#ff6600;
+}
+.dotted-bg{
+	background:url(../images/dot_long_line.png) repeat;
+	overflow: hidden;
+	_zoom:1;
+}
+.dotted-bg li{
+	float: left;
+	width:104px;
+	padding:0 0 4px 20px;
+	line-height: 20px;
+	display: inline;
+}
+.dotted-bg li a{
+	padding:0 5px;
+	color:#323337;
+}
+.dotted-bg li a:hover,.dotted-bg li.hover a{
+	background:#323337;
+	color:#fff;
+}
+.big-clumn .open-list{
+	width:715px;
+}
+
+.big-clumn{
+	overflow: hidden;
+	_zoom:1;
+}
+.open-list .table-box li.open{
+	width:113px;
+}
+.open-list .table-box li.service{
+	width:91px;
+}
+.open-list .table-box li.company{
+	width:92px;
+}
+.open-list .table-box li.gift{
+	width:102px;
+}
+.open-list .table-box li.players{
+	width:56px;
+}
+.open-list .table-box li.play{
+	width:74px;
+}
+.open-list .table-box li.model{
+	width:110px;
+}
+.open-list .table-box li.convene{
+	width:45px;
+}
+.titles .more{
+	float: right;
+	margin-top:11px;
+}
+a.trend,a.trend span{
+	height:25px;
+	float: left;
+	background:url(../../img/public/piece.png) no-repeat;
+}
+a.trend{
+	padding-left:35px;
+	background-position:left 0;
+	margin-top:5px;
+}
+a.trend span{
+	padding-right:10px;
+	background-position: right 0;
+	line-height: 22px;
+	font-weight: bold;
+	color:#fff;
+	cursor: pointer;
+}
+.game-news{
+	border:#eee 4px solid;
+	border-width:4px 4px 0;
+	width:262px;
+}
+.game-news .tit{
+	height:36px;
+	margin:4px 4px 0;
+	padding-left:5px;
+	border-bottom:2px #eee solid;
+}
+.game-news .tit h2{
+	line-height: 36px;
+	font-size: 14px;
+}
+.game-news .tit h2 span{
+	color:#1dacf0;
+}
+.game-news .box{
+	padding:10px;
+	border-bottom:4px #eee solid;
+	overflow: hidden;
+}
+.player-list-2 .box{
+	padding-top:2px;
+}
+.game-news .more{
+	float: right;
+	margin-top:10px;
+	background:#9e9e9e;
+	color:#fff;
+	padding:0 3px;
+}
+.player-list-2 li{
+	width:242px;
+	height:24px;
+	padding:8px 0;
+	border-bottom:1px #ddd dotted;
+}
+.player-list-2 .user-name{
+	float: left;
+	width:77px;
+	height:24px;
+	line-height: 24px;
+	overflow: hidden;
+	color:#5d8bb8;
+}
+.player-list-2 .detail{
+	width:144px;
+	height:16px;
+	line-height: 16px;
+	padding:4px 0 4px 20px;
+	float: right;
+	background: url(../../img/public/friends.png) 0 -98px no-repeat
+}
+.player-list-2 .detail .about{
+	float: left;
+	width: 88px;
+	height: 17px;
+	overflow: hidden;
+}
+.player-list-2 .detail .about span{
+	color:#9e9e9e;
+	line-height: 16px;
+}
+.player-list-2 .detail .about span i{
+	float: left;
+}
+.player-list-2 .detail .about span em{
+	color:#000;
+	padding:0 15px 0 8px;
+	border-right:1px #000 dotted;
+	width: 40px;
+	float:left;
+	overflow: hidden;
+	height: 17px;
+	vertical-align: middle;
+}
+.player-list-2 .detail .set{
+	float: left;
+	width: 50px;
+}
+.game-news .news-list li{
+	height:31px;
+	line-height: 31px;
+	padding-left:5px;
+	color:#5d8bb8;
+	background-position: -61px -893px;
+}
+.game-news .news-list li a{
+	width:185px;
+	height:31px;
+	color:#5d8bb8;
+	overflow: hidden;
+}
+.game-news .news-list li a:hover{
+	text-decoration: underline;
+	color:#5d8bb8;
+}
+.news-list .date{
+	float: right;
+	color:#9e9e9e;
+}
+.img-list{
+	height:110px;
+	margin-left: -1px;
+}
+.img-list li{
+	float: left;
+	display: inline;
+	padding:5px 17px 5px 18px;
+	border-left: 1px #e9e9e9 dotted;
+}
+.game-img .border-box{
+	height:110px;
+	overflow: hidden;
+	padding:10px 0;
+}
+.img-list li img{
+	width:130px;
+	height: 99px;
+	display: block;
+}
+.bbs-table th{
+	background:#f5f5f5;
+	border-bottom:#828282 solid 1px;
+	height:31px;
+	line-height: 31px;
+	font-weight: normal;
+	text-align: left;
+}
+.bbs-table th.tit{
+	text-align:left;
+	padding-left: 30px;
+}
+.bbs-table td{
+	height:44px;
+	line-height: 20px;
+	color:#9f9f9f;
+	border-bottom:1px #e9e9e9 dotted;
+}
+.bbs-table td.tit a{
+	font-size:14px;
+	color:#303338;
+	display: inline-block;
+	height:24px;
+	line-height: 24px;
+	padding-left: 35px;
+	background-position:-34px -755px;
+}
+.bbs-table tbody{
+	font-size:12px;
+}
+.bbs-table td.tit a:hover{
+	text-decoration: underline;
+}
+.bbs-more{
+	margin:15px 0;
+	text-align: right;
+}
+.bbs-more a{
+	color:#525252;
+}
+.post-new{
+	padding-bottom:4px;
+	background:#f8f9f9;
+}
+.post-new .box{
+	border:1px #f2f4f4 solid;
+	border-width: 1px 0;
+	padding:20px 0;
+	line-height: 35px;
+	overflow: hidden;
+	_zoom:1;
+}
+.post-new label{
+	float: left;
+	width:110px;
+	padding-right:10px;
+	text-align:right;
+	color:#4d869b;
+}
+.post-new .item{
+	margin-bottom:15px;
+	overflow: hidden;
+	_zoom:1;
+}
+.post-new .item input{
+	float: left;
+}
+.item .text{
+	height:33px;
+	border:1px #719eaf solid;
+	border-bottom:1px #c1d5dc solid;
+	line-height: 33px;
+	background: #fff;
+	padding:0 10px;
+}
+.text-box{
+	float: left;
+}
+.text-box textarea{
+	height:120px;
+}
+.post-new .item img{
+	display: inline-block;
+	margin-left:5px;
+	vertical-align: middle;
+}
+.post-new .submit{
+	height:35px;
+	padding:0 15px;
+	color:#fff;
+	background:#1ba7c9;
+	margin-left: 120px;
+	font:14px/35px 微软雅黑,黑体,宋体;
+	cursor: pointer;
+}
+.new-post{
+	background:#4da55f url(../../img/public/icons.png) -40px -782px no-repeat;
+	padding-left: 30px;
+	height:30px;
+	line-height: 30px;
+	display:block;
+	float: right;
+	font-weight: bold;
+	color:#fff;
+	padding-right:10px;
+}
+.add-msg{
+	margin-left:10px;
+	color:#707070;
+}
+.add-msg a{
+	text-decoration: underline;
+	color:#000;
+}
+.author-box{
+	padding:3px 0 0 3px;
+	height:94px;
+	width:222px;
+	top:25px;
+	left: -5px;
+	display: none;
+}
+.author-box .level{
+	position: absolute;
+	right:10px;
+	color:#fe3e19;
+	top:5px;
+}
+.author-box .the-box{
+	width:198px;
+	height: 73px;
+	border:1px #c8dfe9 solid;
+	background: #fff;
+	top:0;
+	left: 3px;
+	padding:10px;
+}
+.author-box .img img{
+	width:40px;
+	height:40px;
+	display: block;
+}
+.author-box .author-detail{
+	height:40px;
+	line-height: 20px;
+	margin-bottom:10px;
+	z-index: 999;
+}
+.author-box .img{
+	float: left;
+	padding-right:5px;
+}
+.author-box .names{
+	float: left;
+}
+.author-box .names strong{
+	display: block;
+	color:#000;
+	padding-left: 3px;
+}
+.author-box .bg-box{
+	width:222px;
+	height: 94px;
+	background:#f0f0f0;
+}
+
+.author-box .contrl a{
+	height: 18px;
+	display: inline;
+	background:#3fbded url(../../img/public/icons.png) no-repeat;
+	color:#fff;
+	line-height: 16px;
+	padding:0 5px 0 20px;
+	float: left;
+	margin-right: 5px;
+}
+.author-box .contrl a.off{
+	background:#ccc url(../../img/public/icons.png) no-repeat;
+}
+.author-box .contrl a.add{
+	background-position:-48px -809px;
+}
+.author-box .contrl a.msg{
+	background-position:-48px -825px;
+}
+a.bbs-target{
+    margin:5px 15px 0 0;
+}
+.now-open .btns{
+    text-align: center;
+    border:1px #E9E9E9 solid;
+    padding:6px; 0;
+}
+.now-open .btns a{
+    display: block;
+    width:108px;
+    height: 18px;
+    margin:0 auto;
+}
+.now-open .btns a.shamon{
+    background-position: 110px -788px;
+}
+.now-open .btns a.shamon.all{
+    background-position:110px -775px;
+}

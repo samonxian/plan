@@ -1,0 +1,211 @@
+.about-em .titles h2 i{
+	font-size:25px;
+	color:#252525;
+}
+.about-em .this-box .box{
+	height:140px;
+	padding:10px 0;
+}
+a.trend,a.trend span{
+	height:25px;
+	float: left;
+	background:url(../images/piece.png) no-repeat;
+}
+a.trend{
+	padding-left:35px;
+	background-position:left 0;
+	margin:5px 0 0 10px;
+}
+a.trend span{
+	padding-right:10px;
+	background-position: right 0;
+	line-height: 22px;
+	font-weight: bold;
+	color:#fff;
+	cursor: pointer;
+}
+.about-em .this-box{
+	border-bottom:1px #e9e9e9 solid;
+}
+.left-pro{
+	width:292px;
+	float:left;
+}
+.sort-pro{
+	height:58px;
+	padding:15px 0 20px 0;
+}
+.sort-pro dt{
+	float: left;
+}
+.sort-pro dd{
+	float: left;
+	padding-left: 10px;
+	line-height: 24px;
+	color:#828282;
+}
+.sort-pro dd b{
+	color:#fd6802;
+}
+.sort-pro dt img{
+	width:130px;
+	height: 46px;
+	display: block;
+	padding:5px;
+	border:1px #e9e9e9 solid;
+}
+.left-pro .service{
+	padding:17px 0;
+	border-top:1px #ddd dotted;
+}
+.left-pro .service .ser,.middle-box .left-bg,.right-box .arrow{
+	background:url(../images/tips.png) no-repeat;
+}
+.left-pro .service .ser{
+	padding-left: 20px;
+	background-position: -61px -238px;
+	color:#303338;
+}
+.left-pro .service a{
+	color:#828282;
+}
+.left-pro .service a:hover{
+	color:#ff6600;
+}
+.middle-box{
+	width:420px;
+	float:left;
+	line-height: 26px;
+}
+.middle-box .pro-word{
+	float: left;
+	width:395px;
+	padding-top:10px;
+	height:104px;
+	overflow: hidden;
+	color:#303338;
+}
+.middle-box .left-bg{
+	float: left;
+	width:8px;
+	height: 140px;
+	background-position: -66px 0;
+	margin:0 5px 0 10px;
+}
+.right-box{
+	float:right;
+	
+}
+.right-box .conact{
+	width:218px;
+	padding:10px 10px 10px 60px;
+	border:1px #aae9de solid;
+	height: 120px;
+	background: #fafafa;
+}
+.right-box .conact p{
+	height:22px;
+}
+.right-box .conact p .label{
+	float: left;
+	width:45px;
+}
+.right-box .conact p .text{
+	width:173px;
+	height:22px;
+	float: left;
+}
+.right-box .conact p .text.point{
+	color:#09c8bd;
+}
+.right-box .arrow{
+	width:15px;
+	height: 15px;
+	overflow: hidden;
+	background-position: 0 -239px;
+	right:0;
+	bottom:0;
+}
+.right-box .tips{
+	width:14px;
+	padding:10px 8px 0;
+	height:90px;
+	background: #03bc9d;
+	color:#fff;
+	font:14px/18px 微软雅黑,宋体;
+	top:0;
+	left: 15px;
+}
+.em-open .this-box{
+	border:1px #e9e9e9 solid;
+}	
+.em-open .table-box dd{
+	border-bottom:0;
+}
+
+.em-open .this-box .service{
+	width:106px;
+}
+
+
+.employ-list{
+	overflow: hidden;
+	_zoom:1;
+	margin-left: -1px;
+}
+.employ-list dl{
+	padding:15px 35px 3px;
+	width:128px;
+	border-left: 1px #e9e9e9 solid;
+	float: left;
+	display: inline;
+}
+.employ-list dt img{
+	width:120px;
+	height: 90px;
+	padding:3px;
+	border:1px #e9e9e9 solid;
+	display: block;
+	background: #fff;
+}
+.employ-list dt a:hover img{
+	border:1px #30caf0 solid;
+}
+.employ-list dd span,.employ-list dd span em{
+	float: left;
+	height: 18px;
+}
+.employ-list dd{
+	width:118px;
+	padding:7px 5px;
+	color:#9e9e9e;
+}
+.employ-list dd a{
+	font-weight: bold;
+	float: left;
+	color:#036dc1;
+}
+.employ-list dd span{
+	float: right;
+	background:#F2FEFF;
+	color:#303338;
+}
+.employ-list dd span i{
+	color:#fd6802;
+}
+.employ-list dd p{
+	height: 18px;
+}
+.employ-list dd p.first{
+	margin-bottom:5px;
+}
+.employ-list dd p.first span a{
+	color:#5d8bb8;
+	font-weight: normal;
+}
+.employ-list dd p b{
+	color:#ff6600;
+}
+.employ-list dd p b.green{
+	color:#26ae3f;
+}

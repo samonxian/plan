@@ -1,0 +1,1 @@
+<?php	$content = "<b>备注：</b>";	if($remark){		foreach($remark as $each_remark){			$content .= "<div>".$each_remark->content."</div>";		}	}else{			$content .= "暂无备注信息！";	}	echo $content;?>

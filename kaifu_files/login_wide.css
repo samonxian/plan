@@ -1,0 +1,174 @@
+@charset "gb2312";
+/* CSS Document */
+
+.hy_win_log{ 
+	width: 580px;
+	height: 340px;	
+	left: 50%;
+	margin-left:-290px;	
+	position: fixed;
+	top: 25%;
+	z-index: 9999;
+	display:none;
+	/*background: #F00;*/
+
+}
+* html .hy_win_log{ position:absolute;bottom:auto;top:expression(eval(document.documentElement.scrollTop+150)); z-index:9999;}
+.hy_win_log{ position:fixed;bottom:auto;top:expression(eval(document.documentElement.scrollTop+150)); z-index:9999;}
+
+
+/* ----- login & register & ajax -----*/
+#logindiv			{
+	background-color: #FFF;
+	font-size: 14px;
+	margin:10px auto 35px auto;
+	padding:8px 20px 20px;
+	width:530px;
+	border:5px solid #4A94DB;
+	filter:alpha(opacity=95);-moz-opacity:0.95;-khtml-opacity:0.95;opacity: 0.95;
+}
+#logindiv a		{color:#008ACE; text-decoration:none;}
+#logindiv a:hover	{text-decoration:underline;}
+ 
+#logindiv h1		{font-family:Î¢ÈíÑÅºÚ,Microsoft YaHei,Arial,Tahoma;font-size:26px; border-bottom:1px dotted #CCCCCC; height:54px; line-height:54px; overflow:hidden; color:#000; font-weight:normal;}
+ 
+ 
+#logindiv form	{margin:0px; padding: 0px;}
+#logindiv p			{padding:0 0 12px; line-height:180%; color:#666;}
+#logindiv p span		{color:#000;}
+#logindiv label		{padding:0 16px 0 6px;}
+#logindiv input, select, textarea	{margin:4px 0; vertical-align:middle; font-size:14px;}
+#logindiv input,textarea	{border-width:1px;  border-style:solid;}
+#logindiv input.txt, textarea.quick {-moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; border:1px solid #CCC; font-size:14px; padding:5px;}
+#logindiv input.txt:focus, textarea.quick:focus	{-moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px; -webkit-box-shadow:0 0 4px #ECC6C3; -moz-box-shadow:0 0 4px #ECC6C3; color:#000}
+#logindiv input.sub, a.subBtn	{
+	cursor:pointer; 
+	font-size:14px; 
+	font-weight:bold;
+	 border:1px solid #4592AD; 
+	 padding:5px 15px; color:#fff;
+-moz-border-radius:4px;
+ -webkit-border-radius:4px;
+  border-radius:4px;
+  
+text-shadow:0 -1px 0 hsla(214,100%,0%,.2);
+
+background:#4EB1D4;
+background:-webkit-gradient( linear, left top, left bottom, color-stop(.2, #62C8EC), color-stop(1, #319ABF) );
+background:-moz-linear-gradient( center top, #62C8EC 20%, #319ABF 100% );
+}
+#logindiv input.sub:hover, a.subBtn:hover	{text-decoration:none; background:#4EB1D4;}
+
+#logindiv a.newBtn	{cursor:pointer; font-size:14px; font-weight:bold; border:1px solid #4592AD; padding:8px 31px; color:#fff;
+-moz-border-radius:4px; -webkit-border-radius:4px; border-radius:4px;
+text-shadow:0 -1px 0 hsla(214,100%,0%,.2);
+background:#32A9FF;
+background:-webkit-gradient( linear, left top, left bottom, color-stop(.2, #51CAFF), color-stop(1, #32A9FF) );
+background:-moz-linear-gradient( center top, #51CAFF 20%, #32A9FF 100% );
+}
+#logindiv a.newBtn:hover	{text-decoration:none; background:#32A9FF;}
+
+.loginform			{border-right:1px dotted #CCC; float:left; padding:30px 0 10px 0; width:320px; position:relative; overflow: visible;}
+.loginform .txt		{ height:16px;width:180px; background-color:#FAFFBD;}
+
+#logindiv .onerror {
+	display:none;
+position: fixed;
+background: url(http://bbs.07073.com/static/image/common/check_error.gif) no-repeat 0px 50%;
+font-size: 12px;
+font-weight: 400;
+padding-left: 20px;
+white-space: nowrap;
+padding-top:6px;
+padding-bottom:6px;
+margin-left:4px;
+line-height: 160%;
+}
+
+.logininfo			{float:left; padding:25px 0 0 40px;}
+
+/* ----- clearfix -----*/
+.clear		{height:0px; clear:both; visibility:hidden; overflow:hidden;}
+
+/* ----- formError pop -----*/
+#logindiv .pop {position:absolute; background:#000; font-size:14px; padding:6px 10px; border-radius:4px; -moz-border-radius:4px; -webkit-border-radius:4px; width:150px; display:block; z-index:5000; opacity:0.8;}
+#logindiv .pop .l1,.pop .l2,.pop .l3,.pop .l4		{width:1px; background:#000; float:right; display:block; overflow:hidden; position:absolute;}
+#logindiv .pop .con	{color:#fff;}
+#logindiv .pop .l4	{height:1px; left:-4px; top:10px;}
+#logindiv .pop .l3	{height:3px; left:-3px; top:9px;}
+#logindiv .pop .l2	{height:5px; left:-2px; top:8px;}
+#logindiv .pop .l1	{height:7px; left:-1px; top:7px;}
+
+
+
+
+
+
+
+
+/* 20120507 */
+.di_bigEdge { height: 33px; background: url(http://img1.07073.com/_12img/dimg/bg.gif) 0 -300px repeat-x; overflow: visible; z-index: 99999; }
+.di_subEdge { width: 980px; margin: 0 auto; overflow: visible; position: relative; z-index: 99999; }
+
+.di_topMainNav { height: 28px; padding-top: 5px; }
+.di_topMainNav dt { width: 150px; height: 22px; float: left; }
+.di_topMainNav dt a { width: 135px; height: 22px; display: block; }
+.di_topMainNav dd { float: left; color: #BEBEBE; padding-top: 5px; }
+	.di_topMainNav dd a:link { color: #000; text-decoration: none; }
+	.di_topMainNav dd a:visited { color: #000; text-decoration: none; }
+	.di_topMainNav dd a:hover { color: #000; text-decoration: underline; }
+	.di_topMainNav dd a:active { color: #000; text-decoration: none; }
+
+.di_reg { height: 26px; margin-top: -26px; width: 877px; text-align: right; }
+a.xxreg { width: 45px; height: 20px; line-height: 21px; background: url(http://img1.07073.com/_12img/dimg/bg.gif) 0 -40px no-repeat; 
+			display: block; float: right; text-align: center; color: #0064CC; text-decoration: none; margin-left: 4px; }
+a.xxreg:hover { text-decoration: none; color: #1286FF; }
+
+#hy_log2 { padding-top: 3px; }
+.di_afterReg { height: 24px; margin-top: -24px; width: 877px; text-align: right; font-family: Arial; }
+	#hy_log2 a:link { color: #0066CB; text-decoration: none; }
+	#hy_log2 a:visited { color: #0066CB; text-decoration: none; }
+	#hy_log2 a:hover { color: #0066CB; text-decoration: underline; }
+	#hy_log2 a:active { color: #0066CB; text-decoration: none; }
+
+
+.diGPS { height: 28px; margin-top: -28px; margin-left: 883px; background: url(http://img1.07073.com/_12img/dimg/bg.gif) 0 -65px no-repeat; padding-left: 7px; overflow: hidden;}
+.diGPS a { width: 84px; height: 28px; text-align: center; display: block; font-family: Arial; line-height: 22px; }
+	.diGPS a:link, .diGPS a:visited, .diGPS a:hover, .diGPS a:active { color: #fff; text-decoration: none; }
+
+#di_bigGpsBoxing { width: 776px; position: absolute; top: 30px; right: 0; }
+.di_bigGpsBorder { border: 1px #C9C9C9 solid; background: #FEFEFE url(http://img1.07073.com/_12img/dimg/bg.gif) 0 bottom repeat-x; width: 774px; }
+.di_bigGpsCurner { background: url(http://img1.07073.com/_12img/dimg/di_bigGpsCurner.gif) right bottom no-repeat; padding-left: 6px; padding-top: 6px; }
+
+.di_gpsNav { width: 96px; float: left; }
+.di_gpsNav dt { width: 90px; height: 24px; text-align: center; line-height: 25px; background: url(http://img1.07073.com/_12img/dimg/bg.gif) 0 -170px no-repeat; margin-bottom: 4px; }
+.di_gpsNav dd { padding-left: 1px; }
+.di_gpsNav li { width: 88px; height: 24px; font-size: 13px; line-height: 24px; text-align: center; margin-bottom: 4px; background: #EBEBEB; }
+	.di_gpsNav a:link { color: #333; text-decoration: none; }
+	.di_gpsNav a:visited { color: #333; text-decoration: none; }
+	.di_gpsNav a:hover { color: #0066CB; text-decoration: none; }
+	.di_gpsNav a:active { color: #333; text-decoration: none; }
+	
+.yu_ge { height: 30px; margin-top: -30px; padding-left: 510px; text-align: right; width: 143px; }
+
+/* me.07073.com login frame */
+
+.user_win1{ width:404px; position:absolute;z-index: 9999;left: 50%;margin-left:-202px;top: 25%;display:none;}
+.user_win1_top{ background:url(../_11img/win/win.gif) no-repeat 0 -56px; height:3px;}
+.user_win1_mid{ border-left:#dcdcdc solid 3px;border-right:#dcdcdc solid 3px;}
+.user_win1_mid1{ border:#cccccc solid 1px;}
+.user_win1_bot{ background:url(../_11img/win/win.gif) no-repeat 0 -69px; height:3px;}
+
+.user_win_tit{ height:42px; background:#f3f3f3; padding:0 11px 0 20px; border-top:#fcfcfc solid 1px; border-bottom:#cccccc solid 1px;}
+.user_win_tit dt{ float:left; font-family:"Î¢ÈíÑÅºÚ"; font-size:18px; color:#333; padding-top:7px;}
+.user_win_tit dd{ padding-top:10px; cursor:pointer; float:right;}
+
+.user_win_con{ background:#fff; color:#666; font-size:14px; padding:20px 0;}
+.user_win_con span{ font-size:12px; color:#333;}
+.user_win_con span a:link,.user_win_con span a:visited{ color:#0089d2; text-decoration:none;}
+.user_win_con span a:hover,.user_win_con span a:active{ color:#0089d2; text-decoration:underline;}
+
+.user_win_con_in{ width:200px; height:22px; background:#fff; font-size:12px; border:#acacac solid 1px; padding-left:6px; color:#333; padding-top:5px\9;height:17px\9;}
+
+* html .user_win1{ position:absolute;bottom:auto;top:expression(eval(document.documentElement.scrollTop+150)); z-index:9999;}
+.user_win1{ position:fixed;bottom:auto;top:expression(eval(document.documentElement.scrollTop+150)); z-index:9999;}

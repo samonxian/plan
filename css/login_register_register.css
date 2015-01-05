@@ -1,0 +1,125 @@
+
+			.register-one{
+				width:970px;
+				margin:0 auto 17px auto;
+				border:1px solid #e8e6e6;
+			}
+			
+			/*-----------注册二级头部style开始-------*/
+			.register-common-o{
+				position:relative;
+				width:100%;
+				height:58px;
+				background:#3498db;
+			}
+			.register-common-o span{
+				font-family:'微软雅黑';
+				font-size:24px;
+				color:#FFFFFF;
+				position:absolute;
+				left:20px;
+				top:15px;
+			}
+			/*-----------注册二级头部style结束-------*/
+			
+			/*----------登陆展示部分style开始--------*/
+			.register-common-t{
+				width:205px;
+				height:510px;
+				margin-top:30px;
+				border-left:1px solid #e8e6e6;
+				text-align:center;
+			}
+			.register-common-t span{
+				display:block;
+				margin:0 auto;
+				font-family:'宋体';
+				font-size:12px;
+			}
+			.register-common-t .common-t-title{
+				margin-top:23px;
+			}
+			.register-common-t .common-t-button{
+				margin-top:10px;
+				width:60px;
+				height:30px;
+				line-height:30px;
+				border:1px solid #efefef;
+				border-radius:5px;
+				background:#ededed;
+			}
+			
+			/*----------登陆展示部分style结束--------*/
+			
+			
+			/*----------表单部分style开始------------*/
+			.register-one-content{
+				width:100%;
+			}
+			.sign{color:red;}
+			
+			.left-head{
+				display:block;
+				width:650px;
+				height:30px;
+				margin:30px auto 15px auto;
+				line-height:35px;
+				color:#3498db;
+				border-bottom:2px solid #3498db;
+				font-family:'宋体';
+				font-size:14px;
+				text-align:left;
+			}
+			.content-left{
+				width:725px;
+			}
+			.content-left label{
+				font-family:'宋体';
+				font-size:14px;
+				color:#000000;
+			}
+			.content-left input{
+				width:265px;
+				height:30px;
+				border:1px solid #c4c4c4;
+				border-radius:3px;
+			}
+			.form{
+				border:1px solid #FFFFFF;
+				width:650px;
+				margin:0 auto;
+				text-align:left;
+			}
+			.form-row{
+				margin-top:20px;
+			}
+			.error-tip{
+				font-family:'宋体';
+				font-size:12px;
+				color:#999999;
+				padding:2px 2px 2px 25px;
+				
+				background:url('images/error.jpg') no-repeat 5px 0;
+			}
+			/*----------表单部分style结束------------*/
+			
+			
+			/*----------页面button的style开始--------*/
+			.buttons{
+				width:100%;
+				padding:23px 0 30px 120px;
+			}
+			.next-button{
+				display:block;
+				text-align:center;
+				width:100px;
+				height:32px;
+				background:#3498db;
+				color:#FFFFFF;
+				font-family:'宋体';
+				font-size:14px;
+				line-height:32px;
+				border-radius:3px;
+				margin-right:10px;
+			}
+			/*----------页面button的style结束--------*/

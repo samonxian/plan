@@ -1,0 +1,221 @@
+.titles-o{margin:-5px 0 0 0;height:100%;background:url('../images/shadowleft.png') no-repeat -3px 28px;}
+.titles-o .titles-o-o{width:153px;height:28px;line-height:28px;text-align:center;background:#fe7b2b;color:#FFF;}
+.titles h2 span{color:#FFF;}
+
+.tyles{margin:10px 0 0 0;}
+.tyles a{margin:0 5px;color:#000;}
+.tyles .on{color:#fe7b2b;}
+
+.tab-p{margin:10px 0 0 0;height:38px;width:100%;background:url('../images/shadowright.png') no-repeat right 30px;}
+.tab-p-o{height:30px;background:#f1f1f1;}
+.tab-p-tyles{margin:5px 0 0 0;}
+
+.show-month s,.check-all s,.quick a s{
+	background:url(../images/icons.png) no-repeat;
+}
+.show-month span{
+	float: left;
+	cursor: pointer;
+}
+.show-month s{
+	width:5px;
+	height:10px;
+	display: inline-block;
+	background-position:0 -760px;
+	margin:12px 0 0 5px;
+}
+.calendar .contrl{
+	height:28px;
+	background:#e76357;
+	color:#fff;
+	padding:0 10px;
+	line-height: 28px;
+}
+.calendar .contrl .show-month{
+	float: left;
+	padding-right:15px;
+	position: relative;
+	z-index: 999;
+}
+.quick{
+	float: right;
+	height:18px;
+	padding-top:5px;
+	line-height: 18px;
+}
+.quick span{
+	float: left;
+	padding:0 5px;
+}
+.quick a{
+	color:#fff;
+	display: inline;
+	padding:0 5px;
+	height:18px;
+	float: left;
+}
+.quick a:hover{
+	background:#dd473d;
+	color:#fff;
+}
+.quick a span{
+	display: inline-block;
+}
+.quick a s{
+	width:5px;
+	height:9px;
+	display: inline-block;
+	overflow: hidden;
+}
+.quick a.pre s{
+	margin-right:5px;
+	background-position:-17px -760px;
+}
+.quick a.pre:hover s{
+	background-position:-6px -760px;
+}
+.quick a.next s{
+	margin-left:5px;
+	background-position:-11px -760px;
+}
+.quick a.next:hover s{
+	background-position:-22px -760px;
+}
+.month-list {
+    background:#fff;
+    border: 1px solid #EDF4F8;
+    height: 67px;
+    overflow: hidden;
+    top: 14px;
+    width: 74px;
+    z-index: 999;
+    left:73px;
+}
+.month-list ul {
+    margin: -1px 0 0 -1px;
+    overflow: hidden;
+    _zoom:1;
+}
+.month-list li {
+	border:1px #EDF4F8 solid;
+    border-width: 1px 0 0 1px;
+    float: left;
+    line-height: 16px;
+    text-align: center;
+}
+.month-list li a{
+	color: #666666;
+    display: block;
+    height: 16px;
+    width: 24px;
+}
+.month-list li a:hover{
+	background:#0073b7;
+	color:#fff;
+}
+.date-list{
+	
+}
+.date-list .box{
+	overflow: hidden;
+	margin-top:5px;
+	z-index: 6;
+}
+.date-list  ul{
+	margin:-1px 0 0 -1px;
+	overflow: hidden;
+	width:1001px;
+}
+.date-list li {
+    border:1px #fff solid;
+    border-width: 1px 0 0 1px;
+    display: inline;
+    float: left;
+    height: 28px;
+    overflow: hidden;
+    text-align: center;
+    width: 90px;
+    line-height: 28px;
+    background: #f9f9f9;
+}
+.date-list li a{
+	height:28px;
+	width:90px;
+	display: block;
+	color:#828282;
+}
+.date-list li a:hover,.date-list li.hover a{
+	color:#ff6600;
+}
+.hover-border{
+	width:90px;
+	height:28px;
+	position: absolute;
+	border:1px #ff6600 solid;
+	z-index: 888;
+	display: none;
+}
+.open-links .border-box{
+	border-width:0 0 1px;
+}
+.choose-msg{
+	margin-top:10px;
+}
+.choose-msg .date{
+	color:#282828;
+	border:1px #1dacf2 solid;
+	background: #fff;
+	padding:0 5px;
+	margin:0 5px;
+}
+.choose-msg b{
+	font-weight:bold;
+	color:#ff6600;
+	margin:0 5px;
+}
+.dotted-bg{
+	background:url(../../img/public/dot_long_line.png) repeat;
+	overflow: hidden;
+	_zoom:1;
+}
+.dotted-bg li{
+	float: left;
+	width:104px;
+	padding:0 0 4px 20px;
+	line-height: 20px;
+	display: inline;
+}
+.dotted-bg li a{
+	padding:0 5px;
+	color:#323337;
+}
+.dotted-bg li a:hover{
+	background:#323337;
+	color:#fff;
+}
+.open-links li a em{
+	color:#1cadee;
+}
+.open-links li a:hover,.open-links li a:hover em,.open-links li.hover a,.open-links li.hover a em{
+	background:none;
+	color:#ff6600;
+}
+.open-links li.check-all a{
+	background:#9e9e9e;
+	color:#fff;
+	display: inline-block;
+}
+.open-links li.check-all a:hover{
+	background:#808080;
+}
+.check-all s{
+	margin-left: 5px;
+	width:8px;
+	height:8px;
+	display:inline-block;
+	overflow:hidden;
+	background-position:-28px -764px;
+}
+.check-all .all s{
+	background-position: -28px -758px	
+}

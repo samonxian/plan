@@ -1,0 +1,351 @@
+
+.content{
+	overflow: hidden;
+	_zoom:1;
+}
+.ac_results {
+	padding: 0px;
+	border: 1px solid #ddd;
+	background-color: white;
+	overflow: hidden;
+	z-index: 99999;
+	border-radius: 0 0 5px 5px;
+}
+
+.ac_results ul {
+	width: 100%;
+	list-style-position: outside;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.ac_results li {
+	margin: 0px;
+	padding: 2px 5px;
+	cursor: default;
+	display: block;
+	/* 
+	if width will be 100% horizontal scrollbar will apear 
+	when scroll mode will be used
+	*/
+	/*width: 100%;*/
+	font: menu;
+	font-size: 12px;
+	cursor: pointer;
+	/* 
+	it is very important, if line-height not setted or setted 
+	in relative units scroll will be broken in firefox
+	*/
+	line-height: 20px;
+	overflow: hidden;
+}
+
+.ac_loading {
+	background: white url('/public/js/libs/autocomplete/indicator.gif') right center no-repeat;
+}
+
+.ac_odd {
+	background-color: #effbff;
+}
+
+
+.left-box{
+	width:715px;
+	float: left;
+}
+.right-box{
+	width:270px;
+	float: right;
+}
+.new-game{
+	background:#fbfbfb;
+	border:1px #e9e9e9 solid;
+	padding:10px;
+}
+.new-game .list{
+	height:227px;
+	overflow: hidden;
+	_zoom:1;
+}
+
+.new-game dl{
+	margin-left: -1px;
+	float: left;
+	width:230px;
+	padding-top:15px;
+	display: inline;
+	border-left: 1px #e9e9e9 solid;
+	height:212px;
+}
+.new-game.one-page dl{
+	width:195px;
+	overflow: hidden;
+	height: auto;
+}
+.new-game.one-page .list{
+	height:auto;
+	overflow: hidden;
+}
+.new-game dl dt{
+	text-align: center;
+	font:bold 14px/30px 宋体;
+}
+.new-game dl dt img,.game-list dl dt img{
+	width:120px;
+	height:90px;
+	display: block;
+	margin:0 auto;
+	padding:3px;
+	border:1px #e9e9e9 solid;
+	background: #fff;
+}
+.new-game dl dt a,.game-list dl dd h3 a{
+	color:#036dc1;
+}
+.new-game dl dt a:hover img,.game-list dl dt a:hover img{
+	border:1px #30caf0 solid;
+}
+.new-game dl dd{
+	padding-left:53px;
+	color:#9d9d9d;
+	line-height: 18px;
+}
+.new-game dl dd a,.game-list dl dd a{
+	color:#303338;
+}
+.new-game dl dd a:hover,.game-list dl dd a:hover{
+	color:#ff6600;
+}
+.new-game .tips,.click-rank .tips{
+	background:url(../images/tips.png) no-repeat;
+	width:62px;
+	height: 49px;
+	overflow: hidden;
+	top:-1px;
+	right:-1px;
+}
+.bottom-border{
+	border-bottom:2px #f5f5f5 solid;
+}
+.quick-block{
+	border:1px #e9e9e9 solid;
+	border-width: 1px 0;
+	padding:0 25px;
+}
+.quick-block dl{
+	height:21px;
+	padding:6px 0;
+	line-height: 21px;
+}
+.quick-block .letter,.quick-block .s-type{
+	border-bottom:1px #ddd dotted;
+}
+.quick-block .letter{
+	border-bottom:1px #ddd dotted;
+}
+.quick-block dt{
+	float: left;
+	color:#828282;
+}
+.quick-block b{
+	font-weight: normal;
+	color:#ff6000;
+}
+.quick-block dd{
+	float: left;
+}
+.quick-block dd li{
+	float: left;
+	display: inline;
+	margin-right:8px;
+}
+.quick-block dd li a{
+	display: inline-block;
+	float: left;
+}
+.quick-block dd a{
+	color:#303338;
+	padding:0 2px;
+}
+.quick-block dd a:hover,.quick-block dd .hover a{
+	background:#1eadf3;
+	color:#fff;
+}
+.game-list{
+}
+.game-list .box{
+	margin-left: -15px;
+	overflow: hidden;
+	_zoom:1;
+	
+}
+.game-list dl{
+	background:#fbfbfb;
+	border:1px #e9e9e9 solid;
+	width: 340px;
+	float: left;
+	display: inline;
+	height:133px;
+	overflow: hidden;
+	padding:15px 0 0 8px;
+	margin:0 0 15px 15px;
+}
+.g-action{
+	height:30px;
+	padding-top:7px;
+}
+.game-list .play_btn{
+	background: url(../images/icons.png) no-repeat;
+	background-position: -1px -335px;
+	width: 61px;
+	height: 20px;
+	line-height: 20px;
+	color: #fff;
+	
+	display: block;text-align:center;
+}
+
+.game-list .play_btn:hover{
+	background-position: -1px -356px;
+}
+.game-list .play_btn2{
+	background: url(../images/icons.png) no-repeat;
+	background-position: -1px -293px;
+	width: 33px;
+	height: 20px;
+	line-height: 20px;
+	color: #fff;
+	
+	display: block;text-align:center;
+}
+
+.game-list .play_btn2:hover{
+	background-position: -1px -314px;
+}
+.game-list p{
+	color:#aaa8a8;
+}
+.game-list .g-span1{
+	width:92px;overflow: hidden;height: 17px;
+}
+
+
+.game-list dl dt{
+	float: left;
+	margin-right:10px;
+	width:138px;
+}
+.game-list dl dd{
+	float: left;
+}
+.game-list dl dd h3{
+	font:bold 14px/24px 宋体;
+}
+.click-rank .border-box{
+	border:2px #faf0f0 solid;
+	padding:14px;
+}
+.click-rank .tips{
+	background-position:0 -49px;
+}
+.click-rank  table{
+	width:100%;
+}
+.click-rank  table th{
+	color:black;
+}
+.click-rank  table th,.click-rank  table td{
+	width:33%;
+}
+.t-title h2{
+	color:#252525;
+	font:bold 14px/24px 宋体;
+}
+.click-rank .t-type{
+	padding-top:0px;
+	text-align:right;
+}
+.t-type a{
+	color:#a7a7a7;font-weight:bold;
+}
+.click-rank dt{
+	height:17px;
+	padding:8px 6px;
+}
+.click-rank dt .right{
+	color:#ff6600;
+}
+.click-rank span.num {
+	background:url(../images/icons.png) no-repeat;
+    background-position: -42px -272px;
+    color: #FFFFFF;
+    display:inline-block;
+    height: 13px;
+    line-height: 13px;
+    width: 15px;
+    text-align: center;
+}
+.click-rank span.num.top {
+    background-position: -42px -257px;
+}
+.click-rank dl{
+	border-bottom:1px #e9e9e9 dotted;
+	overflow: hidden;
+	_zoom:1;
+}
+.click-rank .hover dt{
+	background:#fffbf2;
+}
+.click-rank .hover dd{
+	display: block;
+}
+.click-rank dd{
+	display: none;
+	padding:5px 0;
+	line-height: 20px;
+}
+.click-rank dd p{
+	height: 20px;
+}
+.click-rank dd p span{
+	padding-left: 15px;
+	float: left;
+	width:100px;
+	overflow: hidden;
+	height: 20px;
+}
+.this-pro .table-box .name {
+    width: 127px;
+}
+.this-pro .table-box .open {
+    width: 120px;
+}
+.this-pro .table-box .server {
+    width: 100px;
+}
+.this-pro .table-box .type {
+    width: 110px;
+}
+.this-pro .table-box .gift {
+    width: 170px;
+}
+.this-pro .table-box .play {
+    width: 110px;
+}
+.this-pro .table-box .model {
+    width: 130px;
+}
+.this-pro .table-box .company {
+    width: 99px;
+}
+.this-pro{
+	border: 1px solid #E9E9E9
+}
+.this-pro .table-box dd{
+	padding-bottom:10px;
+	border-bottom:0;
+}
+.this-pro .table-box li dd{
+	padding-bottom:0;
+}

@@ -1,0 +1,14 @@
+{
+  "name": "jquerycity",
+  "version": "1.0.0",
+  "description": "基于jquery的城市三级联动插件",
+  "homepage": "http://moonka.info",
+  "author": "qiang.mou",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/silentcloud/jqurycity.git"
+  },
+  "bugs": {
+    "url": "rjmuqiang@gmail.com"
+  }
+}

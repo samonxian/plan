@@ -54,6 +54,14 @@ return array(
 			'userIdColumn'=>'id',
 			'userNameColumn'=>'username',
 		),
+		'rbac'=>array(
+	        'class'=>'application.modules.rbacui.RbacuiModule',
+	        'userClass' => 'User',
+	        'userIdColumn' => 'id',
+	        'userNameColumn' => 'username',
+	        'rbacUiAdmin' => true,
+	        'rbacUiAssign' => true,
+	    ),
 	),
 	// application components
 	'components'=>array(
@@ -84,6 +92,10 @@ return array(
 			// 'tablePrefix' => 'g_',
 			'tablePrefix' => 'g_',
 		),
+		'authManager'=>array(
+            'class'=>'CDbAuthManager',
+            'connectionID'=>'db',
+        ),
 		'memcache'=>array(
 			'class'=>'CMemCache',
 //                    'useMemcached'=>true,

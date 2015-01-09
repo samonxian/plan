@@ -9744,3 +9744,1104 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/favicon.ico
 ---
+2015/01/07 20:29:59 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[42000] [1049] Unknown database 'game2'' in D:\wamp\web\plan\framework\db\CDbConnection.php:381
+Stack trace:
+#0 D:\wamp\web\plan\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\wamp\web\plan\framework\db\CDbConnection.php(308): CDbConnection->setActive(true)
+#2 D:\wamp\web\plan\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\wamp\web\plan\framework\base\CApplication.php(438): CModule->getComponent('db')
+#4 D:\wamp\web\plan\framework\db\ar\CActiveRecord.php(623): CApplication->getDb()
+#5 D:\wamp\web\plan\framework\db\ar\CActiveRecord.php(2309): CActiveRecord->getDbConnection()
+#6 D:\wamp\web\plan\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct(Object(Game))
+#7 D:\wamp\web\plan\framework\web\CActiveDataProvider.php(74): CActiveRecord::model('Game')
+#8 D:\wamp\web\plan\protected\extensions\mylib\NDataAction.php(87): CActiveDataProvider->__construct('Game', Array)
+#9 D:\wamp\web\plan\protected\controllers\layout\StageAction.php(39): NDataAction->insertMemcacheDataByTags(Array, '', '')
+#10 D:\wamp\web\plan\protected\extensions\mylib\TagsAction.php(120): StageAction->tagSearcht()
+#11 D:\wamp\web\plan\protected\extensions\mylib\NController.php(41): TagsAction->runTags('<!DOCTYPE html ...')
+#12 D:\wamp\web\plan\protected\controllers\stage\IndexAction.php(25): NController->render('/stage/index')
+#13 D:\wamp\web\plan\framework\web\actions\CAction.php(76): IndexAction->run()
+#14 D:\wamp\web\plan\framework\web\CController.php(308): CAction->runWithParams(Array)
+#15 D:\wamp\web\plan\framework\web\CController.php(286): CController->runAction(Object(IndexAction))
+#16 D:\wamp\web\plan\framework\web\CController.php(265): CController->runActionWithFilters(Object(IndexAction), Array)
+#17 D:\wamp\web\plan\framework\web\CWebApplication.php(282): CController->run('')
+#18 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#19 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#20 D:\wamp\web\plan\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/
+---
+2015/01/07 20:29:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/01/07 20:30:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\wamp\web\plan\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CController.php(270): CController->missingAction('')
+#1 D:\wamp\web\plan\framework\web\CWebApplication.php(282): CController->run('')
+#2 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('site')
+#3 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\wamp\web\plan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site
+---
+2015/01/07 20:30:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\wamp\web\plan\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CController.php(270): CController->missingAction('')
+#1 D:\wamp\web\plan\framework\web\CWebApplication.php(282): CController->run('')
+#2 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('site')
+#3 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\wamp\web\plan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site
+---
+2015/01/07 20:30:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/admin/article_system/error.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('js/admin/articl...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/admin/article_system/error.js
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/07 20:30:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\wamp\web\plan\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CController.php(270): CController->missingAction('')
+#1 D:\wamp\web\plan\framework\web\CWebApplication.php(282): CController->run('')
+#2 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('site')
+#3 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\wamp\web\plan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site
+---
+2015/01/07 20:30:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/admin/article_system/error.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('js/admin/articl...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/admin/article_system/error.js
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/07 20:30:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index".' in D:\wamp\web\plan\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CController.php(270): CController->missingAction('')
+#1 D:\wamp\web\plan\framework\web\CWebApplication.php(282): CController->run('')
+#2 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('site')
+#3 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\wamp\web\plan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site
+---
+2015/01/07 20:30:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/admin/article_system/error.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('js/admin/articl...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/admin/article_system/error.js
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/07 20:31:51 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "reder".' in D:\wamp\web\plan\framework\base\CComponent.php:265
+Stack trace:
+#0 D:\wamp\web\plan\protected\controllers\SiteController.php(65): CComponent->__call('reder', Array)
+#1 D:\wamp\web\plan\protected\controllers\SiteController.php(65): SiteController->reder('index')
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\wamp\web\plan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\web\plan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wamp\web\plan\framework\web\CWebApplication.php(282): CController->run('')
+#7 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('site')
+#8 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\wamp\web\plan\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/site
+---
+2015/01/07 20:31:52 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "reder".' in D:\wamp\web\plan\framework\base\CComponent.php:265
+Stack trace:
+#0 D:\wamp\web\plan\protected\controllers\SiteController.php(65): CComponent->__call('reder', Array)
+#1 D:\wamp\web\plan\protected\controllers\SiteController.php(65): SiteController->reder('index')
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\wamp\web\plan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\web\plan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wamp\web\plan\framework\web\CWebApplication.php(282): CController->run('')
+#7 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('site')
+#8 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\wamp\web\plan\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/site
+---
+2015/01/07 20:31:52 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "reder".' in D:\wamp\web\plan\framework\base\CComponent.php:265
+Stack trace:
+#0 D:\wamp\web\plan\protected\controllers\SiteController.php(65): CComponent->__call('reder', Array)
+#1 D:\wamp\web\plan\protected\controllers\SiteController.php(65): SiteController->reder('index')
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\wamp\web\plan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\web\plan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wamp\web\plan\framework\web\CWebApplication.php(282): CController->run('')
+#7 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('site')
+#8 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\wamp\web\plan\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/site
+---
+2015/01/07 20:31:52 [error] [exception.CException] exception 'CException' with message 'SiteController and its behaviors do not have a method or closure named "reder".' in D:\wamp\web\plan\framework\base\CComponent.php:265
+Stack trace:
+#0 D:\wamp\web\plan\protected\controllers\SiteController.php(65): CComponent->__call('reder', Array)
+#1 D:\wamp\web\plan\protected\controllers\SiteController.php(65): SiteController->reder('index')
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\wamp\web\plan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\web\plan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wamp\web\plan\framework\web\CWebApplication.php(282): CController->run('')
+#7 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('site')
+#8 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\wamp\web\plan\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/site
+---
+2015/01/08 15:00:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kaifu_files/_img/thisChangeSkin.gif".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('kaifu_files/_im...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kaifu_files/_img/thisChangeSkin.gif
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/public.css
+---
+2015/01/08 15:00:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/pi.gif".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('images/pi.gif')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/pi.gif?cdnversion=20120720
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/bdsstyle.css
+---
+2015/01/08 15:00:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "d/navul.png".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('d/navul.png')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/d/navul.png
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/d.css
+---
+2015/01/08 15:00:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/is.png".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('images/is.png')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/is.png?cdnversion=20131219
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/bdsstyle.css
+---
+2015/01/08 15:00:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "d/navli.png".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('d/navli.png')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/d/navli.png
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/d.css
+---
+2015/01/08 15:00:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/01/08 17:58:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "style/js/other/jquery/angular.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('style/js/other/...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/style/js/other/jquery/angular.js
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/08 17:58:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "style/js/other/jquery/angular.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('style/js/other/...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/style/js/other/jquery/angular.js
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/08 17:59:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "style/js/other/jquery/angular.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('style/js/other/...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/style/js/other/jquery/angular.js
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/09 20:56:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "d/navli.png".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('d/navli.png')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/d/navli.png
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/d.css
+---
+2015/01/09 20:56:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kaifu_files/_img/thisChangeSkin.gif".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('kaifu_files/_im...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kaifu_files/_img/thisChangeSkin.gif
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/public.css
+---
+2015/01/09 20:56:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/pi.gif".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('images/pi.gif')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/pi.gif?cdnversion=20120720
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/bdsstyle.css
+---
+2015/01/09 20:56:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/is.png".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('images/is.png')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/is.png?cdnversion=20131219
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/bdsstyle.css
+---
+2015/01/09 20:56:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "d/navul.png".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('d/navul.png')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/d/navul.png
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/d.css
+---
+2015/01/09 20:59:43 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'game2.authitem' doesn't exist. The SQL statement executed was: INSERT INTO `AuthItem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES (:name, :type, :description, :bizrule, :data).
+2015/01/09 20:59:43 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'game2.authitem' doesn't exist. The SQL statement executed was: INSERT INTO `AuthItem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES (:name, :type, :description, :bizrule, :data)' in D:\wamp\web\plan\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\wamp\web\plan\framework\db\CDbCommand.php(1248): CDbCommand->execute(Array)
+#1 D:\wamp\web\plan\framework\web\auth\CDbAuthManager.php(444): CDbCommand->insert('AuthItem', Array)
+#2 D:\wamp\web\plan\framework\web\auth\CAuthManager.php(100): CDbAuthManager->createAuthItem('createPost', 0, 'create a post', NULL, NULL)
+#3 D:\wamp\web\plan\protected\views\site\index.php(29): CAuthManager->createOperation('createPost', 'create a post')
+#4 D:\wamp\web\plan\framework\web\CBaseController.php(127): require('D:\wamp\web\pla...')
+#5 D:\wamp\web\plan\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\wamp\web\pla...', NULL, true)
+#6 D:\wamp\web\plan\framework\web\CController.php(867): CBaseController->renderFile('D:\wamp\web\pla...', NULL, true)
+#7 D:\wamp\web\plan\framework\web\CController.php(780): CController->renderPartial('index', NULL, true)
+#8 D:\wamp\web\plan\protected\controllers\SiteController.php(66): CController->render('index')
+#9 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\wamp\web\plan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\wamp\web\plan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\wamp\web\plan\framework\web\CWebApplication.php(282): CController->run('')
+#14 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('site')
+#15 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 D:\wamp\web\plan\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/site
+---
+2015/01/09 21:02:33 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'createPost' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `AuthItem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES (:name, :type, :description, :bizrule, :data).
+2015/01/09 21:02:33 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'createPost' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `AuthItem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES (:name, :type, :description, :bizrule, :data)' in D:\wamp\web\plan\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\wamp\web\plan\framework\db\CDbCommand.php(1248): CDbCommand->execute(Array)
+#1 D:\wamp\web\plan\framework\web\auth\CDbAuthManager.php(444): CDbCommand->insert('AuthItem', Array)
+#2 D:\wamp\web\plan\framework\web\auth\CAuthManager.php(100): CDbAuthManager->createAuthItem('createPost', 0, 'create a post', NULL, NULL)
+#3 D:\wamp\web\plan\protected\views\site\index.php(29): CAuthManager->createOperation('createPost', 'create a post')
+#4 D:\wamp\web\plan\framework\web\CBaseController.php(127): require('D:\wamp\web\pla...')
+#5 D:\wamp\web\plan\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\wamp\web\pla...', NULL, true)
+#6 D:\wamp\web\plan\framework\web\CController.php(867): CBaseController->renderFile('D:\wamp\web\pla...', NULL, true)
+#7 D:\wamp\web\plan\framework\web\CController.php(780): CController->renderPartial('index', NULL, true)
+#8 D:\wamp\web\plan\protected\controllers\SiteController.php(66): CController->render('index')
+#9 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\wamp\web\plan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\wamp\web\plan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\wamp\web\plan\framework\web\CWebApplication.php(282): CController->run('')
+#14 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('site')
+#15 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 D:\wamp\web\plan\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/site
+---
+2015/01/09 21:02:46 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'createPost' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `AuthItem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES (:name, :type, :description, :bizrule, :data).
+2015/01/09 21:02:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'createPost' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `AuthItem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES (:name, :type, :description, :bizrule, :data)' in D:\wamp\web\plan\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\wamp\web\plan\framework\db\CDbCommand.php(1248): CDbCommand->execute(Array)
+#1 D:\wamp\web\plan\framework\web\auth\CDbAuthManager.php(444): CDbCommand->insert('AuthItem', Array)
+#2 D:\wamp\web\plan\framework\web\auth\CAuthManager.php(100): CDbAuthManager->createAuthItem('createPost', 0, 'create a post', NULL, NULL)
+#3 D:\wamp\web\plan\protected\views\site\index.php(29): CAuthManager->createOperation('createPost', 'create a post')
+#4 D:\wamp\web\plan\framework\web\CBaseController.php(127): require('D:\wamp\web\pla...')
+#5 D:\wamp\web\plan\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\wamp\web\pla...', NULL, true)
+#6 D:\wamp\web\plan\framework\web\CController.php(867): CBaseController->renderFile('D:\wamp\web\pla...', NULL, true)
+#7 D:\wamp\web\plan\framework\web\CController.php(780): CController->renderPartial('index', NULL, true)
+#8 D:\wamp\web\plan\protected\controllers\SiteController.php(66): CController->render('index')
+#9 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\wamp\web\plan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\wamp\web\plan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\wamp\web\plan\framework\web\CWebApplication.php(282): CController->run('')
+#14 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('site')
+#15 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 D:\wamp\web\plan\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/site
+---
+2015/01/09 21:02:46 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'createPost' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `AuthItem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES (:name, :type, :description, :bizrule, :data).
+2015/01/09 21:02:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'createPost' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `AuthItem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES (:name, :type, :description, :bizrule, :data)' in D:\wamp\web\plan\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\wamp\web\plan\framework\db\CDbCommand.php(1248): CDbCommand->execute(Array)
+#1 D:\wamp\web\plan\framework\web\auth\CDbAuthManager.php(444): CDbCommand->insert('AuthItem', Array)
+#2 D:\wamp\web\plan\framework\web\auth\CAuthManager.php(100): CDbAuthManager->createAuthItem('createPost', 0, 'create a post', NULL, NULL)
+#3 D:\wamp\web\plan\protected\views\site\index.php(29): CAuthManager->createOperation('createPost', 'create a post')
+#4 D:\wamp\web\plan\framework\web\CBaseController.php(127): require('D:\wamp\web\pla...')
+#5 D:\wamp\web\plan\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\wamp\web\pla...', NULL, true)
+#6 D:\wamp\web\plan\framework\web\CController.php(867): CBaseController->renderFile('D:\wamp\web\pla...', NULL, true)
+#7 D:\wamp\web\plan\framework\web\CController.php(780): CController->renderPartial('index', NULL, true)
+#8 D:\wamp\web\plan\protected\controllers\SiteController.php(66): CController->render('index')
+#9 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\wamp\web\plan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\wamp\web\plan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\wamp\web\plan\framework\web\CWebApplication.php(282): CController->run('')
+#14 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('site')
+#15 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 D:\wamp\web\plan\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/site
+---
+2015/01/09 21:02:46 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'createPost' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `AuthItem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES (:name, :type, :description, :bizrule, :data).
+2015/01/09 21:02:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'createPost' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `AuthItem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES (:name, :type, :description, :bizrule, :data)' in D:\wamp\web\plan\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\wamp\web\plan\framework\db\CDbCommand.php(1248): CDbCommand->execute(Array)
+#1 D:\wamp\web\plan\framework\web\auth\CDbAuthManager.php(444): CDbCommand->insert('AuthItem', Array)
+#2 D:\wamp\web\plan\framework\web\auth\CAuthManager.php(100): CDbAuthManager->createAuthItem('createPost', 0, 'create a post', NULL, NULL)
+#3 D:\wamp\web\plan\protected\views\site\index.php(29): CAuthManager->createOperation('createPost', 'create a post')
+#4 D:\wamp\web\plan\framework\web\CBaseController.php(127): require('D:\wamp\web\pla...')
+#5 D:\wamp\web\plan\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\wamp\web\pla...', NULL, true)
+#6 D:\wamp\web\plan\framework\web\CController.php(867): CBaseController->renderFile('D:\wamp\web\pla...', NULL, true)
+#7 D:\wamp\web\plan\framework\web\CController.php(780): CController->renderPartial('index', NULL, true)
+#8 D:\wamp\web\plan\protected\controllers\SiteController.php(66): CController->render('index')
+#9 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\wamp\web\plan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\wamp\web\plan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\wamp\web\plan\framework\web\CWebApplication.php(282): CController->run('')
+#14 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('site')
+#15 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 D:\wamp\web\plan\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/site
+---
+2015/01/09 21:03:01 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'createPost' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `AuthItem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES (:name, :type, :description, :bizrule, :data).
+2015/01/09 21:03:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'createPost' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `AuthItem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES (:name, :type, :description, :bizrule, :data)' in D:\wamp\web\plan\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\wamp\web\plan\framework\db\CDbCommand.php(1248): CDbCommand->execute(Array)
+#1 D:\wamp\web\plan\framework\web\auth\CDbAuthManager.php(444): CDbCommand->insert('AuthItem', Array)
+#2 D:\wamp\web\plan\framework\web\auth\CAuthManager.php(100): CDbAuthManager->createAuthItem('createPost', 0, 'create a post', NULL, NULL)
+#3 D:\wamp\web\plan\protected\views\site\index.php(29): CAuthManager->createOperation('createPost', 'create a post')
+#4 D:\wamp\web\plan\framework\web\CBaseController.php(127): require('D:\wamp\web\pla...')
+#5 D:\wamp\web\plan\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\wamp\web\pla...', NULL, true)
+#6 D:\wamp\web\plan\framework\web\CController.php(867): CBaseController->renderFile('D:\wamp\web\pla...', NULL, true)
+#7 D:\wamp\web\plan\framework\web\CController.php(780): CController->renderPartial('index', NULL, true)
+#8 D:\wamp\web\plan\protected\controllers\SiteController.php(66): CController->render('index')
+#9 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\wamp\web\plan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\wamp\web\plan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\wamp\web\plan\framework\web\CWebApplication.php(282): CController->run('')
+#14 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('site')
+#15 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 D:\wamp\web\plan\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/site
+---
+2015/01/09 21:03:42 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'createPost' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `AuthItem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES (:name, :type, :description, :bizrule, :data).
+2015/01/09 21:03:42 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'createPost' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `AuthItem` (`name`, `type`, `description`, `bizrule`, `data`) VALUES (:name, :type, :description, :bizrule, :data)' in D:\wamp\web\plan\framework\db\CDbCommand.php:358
+Stack trace:
+#0 D:\wamp\web\plan\framework\db\CDbCommand.php(1248): CDbCommand->execute(Array)
+#1 D:\wamp\web\plan\framework\web\auth\CDbAuthManager.php(444): CDbCommand->insert('AuthItem', Array)
+#2 D:\wamp\web\plan\framework\web\auth\CAuthManager.php(100): CDbAuthManager->createAuthItem('createPost', 0, 'create a post', NULL, NULL)
+#3 D:\wamp\web\plan\protected\views\site\index.php(29): CAuthManager->createOperation('createPost', 'create a post')
+#4 D:\wamp\web\plan\framework\web\CBaseController.php(127): require('D:\wamp\web\pla...')
+#5 D:\wamp\web\plan\framework\web\CBaseController.php(95): CBaseController->renderInternal('D:\wamp\web\pla...', NULL, true)
+#6 D:\wamp\web\plan\framework\web\CController.php(867): CBaseController->renderFile('D:\wamp\web\pla...', NULL, true)
+#7 D:\wamp\web\plan\framework\web\CController.php(780): CController->renderPartial('index', NULL, true)
+#8 D:\wamp\web\plan\protected\controllers\SiteController.php(66): CController->render('index')
+#9 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): SiteController->actionIndex()
+#10 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 D:\wamp\web\plan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 D:\wamp\web\plan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\wamp\web\plan\framework\web\CWebApplication.php(282): CController->run('')
+#14 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('site')
+#15 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#16 D:\wamp\web\plan\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/site
+---
+2015/01/09 21:05:11 [error] [php] Undefined variable: model (D:\wamp\web\plan\protected\views\site\login.php:18)
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CController.php(867): SiteController->renderFile()
+#1 D:\wamp\web\plan\framework\web\CController.php(780): SiteController->renderPartial()
+#2 D:\wamp\web\plan\protected\controllers\SiteController.php(74): SiteController->render()
+#3 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): SiteController->actionLogin()
+#4 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 D:\wamp\web\plan\framework\web\CController.php(286): SiteController->runAction()
+#6 D:\wamp\web\plan\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#7 D:\wamp\web\plan\framework\web\CWebApplication.php(282): SiteController->run()
+#8 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#10 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/site/login
+2015/01/09 22:06:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "rabc".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('rabc')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/rabc
+---
+2015/01/09 22:06:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/admin/article_system/error.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('js/admin/articl...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/admin/article_system/error.js
+HTTP_REFERER=http://plan.hkoudai.com/rabc
+---
+2015/01/09 22:06:36 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\RbacuiController.php(49): spl_autoload_call()
+#1 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): RbacuiController->actionUser()
+#2 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): RbacuiController->runAction()
+#4 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#6 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): RbacuiController->filterAccessControl()
+#7 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#9 D:\wamp\web\plan\framework\web\CController.php(265): RbacuiController->runActionWithFilters()
+#10 D:\wamp\web\plan\framework\web\CWebApplication.php(282): RbacuiController->run()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/rbacui/user
+2015/01/09 22:06:37 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\RbacuiController.php(49): spl_autoload_call()
+#1 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): RbacuiController->actionUser()
+#2 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): RbacuiController->runAction()
+#4 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#6 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): RbacuiController->filterAccessControl()
+#7 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#9 D:\wamp\web\plan\framework\web\CController.php(265): RbacuiController->runActionWithFilters()
+#10 D:\wamp\web\plan\framework\web\CWebApplication.php(282): RbacuiController->run()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/rbacui/user
+2015/01/09 22:07:18 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:07:20 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:07:21 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:07:23 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:07:24 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:07:24 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:07:25 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:07:26 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:07:27 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:07:28 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:07:28 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:07:29 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:07:29 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:07:30 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:07:30 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:07:31 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:07:31 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:07:32 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:07:32 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:07:33 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\RbacuiController.php(49): spl_autoload_call()
+#1 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): RbacuiController->actionUser()
+#2 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): RbacuiController->runAction()
+#4 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#6 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): RbacuiController->filterAccessControl()
+#7 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#9 D:\wamp\web\plan\framework\web\CController.php(265): RbacuiController->runActionWithFilters()
+#10 D:\wamp\web\plan\framework\web\CWebApplication.php(282): RbacuiController->run()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/rbacui/user
+2015/01/09 22:07:41 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\RbacuiController.php(49): spl_autoload_call()
+#1 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): RbacuiController->actionUser()
+#2 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): RbacuiController->runAction()
+#4 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#6 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): RbacuiController->filterAccessControl()
+#7 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#9 D:\wamp\web\plan\framework\web\CController.php(265): RbacuiController->runActionWithFilters()
+#10 D:\wamp\web\plan\framework\web\CWebApplication.php(282): RbacuiController->run()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/rbacui/user
+2015/01/09 22:07:43 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\RbacuiController.php(49): spl_autoload_call()
+#1 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): RbacuiController->actionUser()
+#2 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): RbacuiController->runAction()
+#4 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#6 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): RbacuiController->filterAccessControl()
+#7 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#9 D:\wamp\web\plan\framework\web\CController.php(265): RbacuiController->runActionWithFilters()
+#10 D:\wamp\web\plan\framework\web\CWebApplication.php(282): RbacuiController->run()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/rbacui/user
+2015/01/09 22:08:42 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:08:54 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:08:57 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\RbacuiController.php(49): spl_autoload_call()
+#1 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): RbacuiController->actionUser()
+#2 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): RbacuiController->runAction()
+#4 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#6 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): RbacuiController->filterAccessControl()
+#7 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#9 D:\wamp\web\plan\framework\web\CController.php(265): RbacuiController->runActionWithFilters()
+#10 D:\wamp\web\plan\framework\web\CWebApplication.php(282): RbacuiController->run()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/rbacui/user
+2015/01/09 22:08:59 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:09:03 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:09:04 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:09:04 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:09:05 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:09:07 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:09:13 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(173): spl_autoload_call()
+#1 D:\wamp\web\plan\protected\modules\rbacui\controllers\AjaxController.php(238): AjaxController->getAssignedUsers()
+#2 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): AjaxController->actionInfoAuthItem()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#4 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): AjaxController->runAction()
+#5 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#6 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#7 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): AjaxController->filterAccessControl()
+#8 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#9 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#10 D:\wamp\web\plan\framework\web\CController.php(265): AjaxController->runActionWithFilters()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(282): AjaxController->run()
+#12 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#14 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/ajax/infoAuthItem
+2015/01/09 22:09:15 [error] [php] include(User.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\web\plan\framework\YiiBase.php:421)
+Stack trace:
+#0 D:\wamp\web\plan\protected\modules\rbacui\controllers\RbacuiController.php(49): spl_autoload_call()
+#1 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(49): RbacuiController->actionUser()
+#2 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(133): RbacuiController->runAction()
+#4 D:\wamp\web\plan\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#5 D:\wamp\web\plan\framework\web\CController.php(1143): CAccessControlFilter->filter()
+#6 D:\wamp\web\plan\framework\web\filters\CInlineFilter.php(58): RbacuiController->filterAccessControl()
+#7 D:\wamp\web\plan\framework\web\filters\CFilterChain.php(130): CInlineFilter->filter()
+#8 D:\wamp\web\plan\framework\web\CController.php(291): CFilterChain->run()
+#9 D:\wamp\web\plan\framework\web\CController.php(265): RbacuiController->runActionWithFilters()
+#10 D:\wamp\web\plan\framework\web\CWebApplication.php(282): RbacuiController->run()
+#11 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#13 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/rbac/rbacui/user

@@ -2,7 +2,7 @@
 
 class SiteController extends Controller
 {
-	public $layout='login';
+	public $layout='admin_login';
 
 	/**
 	 * Declares class-based actions.
@@ -60,9 +60,37 @@ class SiteController extends Controller
 	/**
 	 * Displays the login page
 	 */
+	public function actionIndex()
+	{
+		$this->layout = "";
+		$this->render("index");
+	}
+	/**
+	 * Displays the login page
+	 */
 	public function actionLogin()
 	{
-		
+		$model=new LoginForm($this->id);
+		// if it is ajax validation request
+		if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
+		{
+			echo CActiveForm::validate($model);
+			Yii::app()->end();
+		}
+		// collect user input data
+		if(isset($_POST['LoginForm']))
+		{
+			$model->attributes=$_POST['LoginForm'];
+			// validate user input and redirect to the previous page if valid
+			
+            if($model->validate() && $model->login()){
+
+                $this->redirect(Yii::app()->createUrl('company/uncheck'));
+            }
+				
+		}
+		// display the login form
+		$this->render('login',array('model'=>$model));
 	}
 
 	/**

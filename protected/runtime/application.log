@@ -10845,3 +10845,648 @@ Stack trace:
 #12 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
 #13 D:\wamp\web\plan\index.php(13): CWebApplication->run()
 REQUEST_URI=/rbac/rbacui/user
+2015/01/10 10:00:14 [error] [exception.CException] exception 'CException' with message 'StageController cannot find the requested view "/stage/index".' in D:\wamp\web\plan\framework\web\CController.php:876
+Stack trace:
+#0 D:\wamp\web\plan\protected\extensions\mylib\NController.php(35): CController->renderPartial('/stage/index', NULL, true)
+#1 D:\wamp\web\plan\protected\controllers\stage\IndexAction.php(25): NController->render('/stage/index')
+#2 D:\wamp\web\plan\framework\web\actions\CAction.php(76): IndexAction->run()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CAction->runWithParams(Array)
+#4 D:\wamp\web\plan\framework\web\CController.php(286): CController->runAction(Object(IndexAction))
+#5 D:\wamp\web\plan\framework\web\CController.php(265): CController->runActionWithFilters(Object(IndexAction), Array)
+#6 D:\wamp\web\plan\framework\web\CWebApplication.php(282): CController->run('')
+#7 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\wamp\web\plan\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2015/01/10 10:00:18 [error] [exception.CException] exception 'CException' with message 'StageController cannot find the requested view "/stage/index".' in D:\wamp\web\plan\framework\web\CController.php:876
+Stack trace:
+#0 D:\wamp\web\plan\protected\extensions\mylib\NController.php(35): CController->renderPartial('/stage/index', NULL, true)
+#1 D:\wamp\web\plan\protected\controllers\stage\IndexAction.php(25): NController->render('/stage/index')
+#2 D:\wamp\web\plan\framework\web\actions\CAction.php(76): IndexAction->run()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CAction->runWithParams(Array)
+#4 D:\wamp\web\plan\framework\web\CController.php(286): CController->runAction(Object(IndexAction))
+#5 D:\wamp\web\plan\framework\web\CController.php(265): CController->runActionWithFilters(Object(IndexAction), Array)
+#6 D:\wamp\web\plan\framework\web\CWebApplication.php(282): CController->run('')
+#7 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\wamp\web\plan\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2015/01/10 10:00:18 [error] [exception.CException] exception 'CException' with message 'StageController cannot find the requested view "/stage/index".' in D:\wamp\web\plan\framework\web\CController.php:876
+Stack trace:
+#0 D:\wamp\web\plan\protected\extensions\mylib\NController.php(35): CController->renderPartial('/stage/index', NULL, true)
+#1 D:\wamp\web\plan\protected\controllers\stage\IndexAction.php(25): NController->render('/stage/index')
+#2 D:\wamp\web\plan\framework\web\actions\CAction.php(76): IndexAction->run()
+#3 D:\wamp\web\plan\framework\web\CController.php(308): CAction->runWithParams(Array)
+#4 D:\wamp\web\plan\framework\web\CController.php(286): CController->runAction(Object(IndexAction))
+#5 D:\wamp\web\plan\framework\web\CController.php(265): CController->runActionWithFilters(Object(IndexAction), Array)
+#6 D:\wamp\web\plan\framework\web\CWebApplication.php(282): CController->run('')
+#7 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\wamp\web\plan\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2015/01/15 23:23:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "d/navli.png".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('d/navli.png')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/d/navli.png
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/d.css
+---
+2015/01/15 23:23:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/pi.gif".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('images/pi.gif')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/pi.gif?cdnversion=20120720
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/bdsstyle.css
+---
+2015/01/15 23:23:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kaifu_files/_img/thisChangeSkin.gif".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('kaifu_files/_im...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kaifu_files/_img/thisChangeSkin.gif
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/public.css
+---
+2015/01/15 23:23:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "d/navul.png".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('d/navul.png')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/d/navul.png
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/d.css
+---
+2015/01/15 23:23:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/is.png".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('images/is.png')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/is.png?cdnversion=20131219
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/bdsstyle.css
+---
+2015/01/15 23:48:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.js".' in D:\wamp\web\plan\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CController.php(270): CController->missingAction('test.js')
+#1 D:\wamp\web\plan\framework\web\CWebApplication.php(282): CController->run('test.js')
+#2 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.js')
+#3 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\wamp\web\plan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/test.js
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/15 23:48:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test.js".' in D:\wamp\web\plan\framework\web\CController.php:483
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CController.php(270): CController->missingAction('test.js')
+#1 D:\wamp\web\plan\framework\web\CWebApplication.php(282): CController->run('test.js')
+#2 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('site/test.js')
+#3 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\wamp\web\plan\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/site/test.js
+---
+2015/01/15 23:48:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/admin/article_system/error.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('js/admin/articl...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/admin/article_system/error.js
+HTTP_REFERER=http://plan.hkoudai.com/site/test.js
+---
+2015/01/16 13:05:10 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] 由于目标计算机积极拒绝，无法连接。
+ (trying to connect via tcp://localhost:3306) (D:\wamp\web\plan\framework\db\CDbConnection.php:423)
+Stack trace:
+#0 D:\wamp\web\plan\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\wamp\web\plan\framework\db\CDbConnection.php(308): CDbConnection->setActive()
+#2 D:\wamp\web\plan\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\wamp\web\plan\framework\base\CApplication.php(438): CWebApplication->getComponent()
+#4 D:\wamp\web\plan\framework\db\ar\CActiveRecord.php(623): CWebApplication->getDb()
+#5 D:\wamp\web\plan\framework\db\ar\CActiveRecord.php(2309): Game->getDbConnection()
+#6 D:\wamp\web\plan\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct()
+#7 D:\wamp\web\plan\framework\web\CActiveDataProvider.php(74): model()
+#8 D:\wamp\web\plan\protected\extensions\mylib\NDataAction.php(87): CActiveDataProvider->__construct()
+#9 D:\wamp\web\plan\protected\controllers\layout\StageAction.php(39): IndexAction->insertMemcacheDataByTags()
+#10 D:\wamp\web\plan\protected\extensions\mylib\TagsAction.php(120): IndexAction->tagSearcht()
+#11 D:\wamp\web\plan\protected\extensions\mylib\NController.php(41): IndexAction->runTags()
+#12 D:\wamp\web\plan\protected\controllers\stage\IndexAction.php(25): StageController->render()
+#13 D:\wamp\web\plan\framework\web\actions\CAction.php(76): IndexAction->run()
+#14 D:\wamp\web\plan\framework\web\CController.php(308): IndexAction->runWithParams()
+#15 D:\wamp\web\plan\framework\web\CController.php(286): StageController->runAction()
+#16 D:\wamp\web\plan\framework\web\CController.php(265): StageController->runActionWithFilters()
+#17 D:\wamp\web\plan\framework\web\CWebApplication.php(282): StageController->run()
+#18 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#20 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+2015/01/16 13:05:16 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: [2002] 由于目标计算机积极拒绝，无法连接。
+ (trying to connect via tcp://localhost:3306) (D:\wamp\web\plan\framework\db\CDbConnection.php:423)
+Stack trace:
+#0 D:\wamp\web\plan\framework\db\CDbConnection.php(330): CDbConnection->open()
+#1 D:\wamp\web\plan\framework\db\CDbConnection.php(308): CDbConnection->setActive()
+#2 D:\wamp\web\plan\framework\base\CModule.php(387): CDbConnection->init()
+#3 D:\wamp\web\plan\framework\base\CApplication.php(438): CWebApplication->getComponent()
+#4 D:\wamp\web\plan\framework\db\ar\CActiveRecord.php(623): CWebApplication->getDb()
+#5 D:\wamp\web\plan\framework\db\ar\CActiveRecord.php(2309): Game->getDbConnection()
+#6 D:\wamp\web\plan\framework\db\ar\CActiveRecord.php(387): CActiveRecordMetaData->__construct()
+#7 D:\wamp\web\plan\framework\web\CActiveDataProvider.php(74): model()
+#8 D:\wamp\web\plan\protected\extensions\mylib\NDataAction.php(87): CActiveDataProvider->__construct()
+#9 D:\wamp\web\plan\protected\controllers\layout\StageAction.php(39): IndexAction->insertMemcacheDataByTags()
+#10 D:\wamp\web\plan\protected\extensions\mylib\TagsAction.php(120): IndexAction->tagSearcht()
+#11 D:\wamp\web\plan\protected\extensions\mylib\NController.php(41): IndexAction->runTags()
+#12 D:\wamp\web\plan\protected\controllers\stage\IndexAction.php(25): StageController->render()
+#13 D:\wamp\web\plan\framework\web\actions\CAction.php(76): IndexAction->run()
+#14 D:\wamp\web\plan\framework\web\CController.php(308): IndexAction->runWithParams()
+#15 D:\wamp\web\plan\framework\web\CController.php(286): StageController->runAction()
+#16 D:\wamp\web\plan\framework\web\CController.php(265): StageController->runActionWithFilters()
+#17 D:\wamp\web\plan\framework\web\CWebApplication.php(282): StageController->run()
+#18 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#20 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/
+2015/01/16 13:05:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "d/navli.png".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('d/navli.png')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/d/navli.png
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/d.css
+---
+2015/01/16 13:05:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "d/navul.png".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('d/navul.png')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/d/navul.png
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/d.css
+---
+2015/01/16 13:05:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kaifu_files/_img/thisChangeSkin.gif".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('kaifu_files/_im...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kaifu_files/_img/thisChangeSkin.gif
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/public.css
+---
+2015/01/16 13:05:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/is.png".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('images/is.png')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/is.png?cdnversion=20131219
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/bdsstyle.css
+---
+2015/01/16 13:05:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/pi.gif".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('images/pi.gif')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/pi.gif?cdnversion=20120720
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/bdsstyle.css
+---
+2015/01/16 13:05:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kaifu_files/_img/thisChangeSkin.gif".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('kaifu_files/_im...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kaifu_files/_img/thisChangeSkin.gif
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/public.css
+---
+2015/01/16 13:05:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "d/navli.png".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('d/navli.png')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/d/navli.png
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/d.css
+---
+2015/01/16 13:05:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "d/navul.png".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('d/navul.png')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/d/navul.png
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/d.css
+---
+2015/01/16 20:51:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "kaifu_files/_img/thisChangeSkin.gif".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('kaifu_files/_im...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/kaifu_files/_img/thisChangeSkin.gif
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/public.css
+---
+2015/01/16 20:51:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/pi.gif".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('images/pi.gif')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/pi.gif?cdnversion=20120720
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/bdsstyle.css
+---
+2015/01/16 20:51:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "d/navli.png".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('d/navli.png')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/d/navli.png
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/d.css
+---
+2015/01/16 20:51:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "images/is.png".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('images/is.png')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/images/is.png?cdnversion=20131219
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/bdsstyle.css
+---
+2015/01/16 20:51:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "d/navul.png".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('d/navul.png')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/d/navul.png
+HTTP_REFERER=http://plan.hkoudai.com/kaifu_files/d.css
+---
+2015/01/16 21:16:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sitetest=ddd.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('sitetest=ddd.js')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sitetest=ddd.js
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 21:20:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sitetest=ddd.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('sitetest=ddd.js')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sitetest=ddd.js
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 21:21:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sitetest=ddd.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('sitetest=ddd.js')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sitetest=ddd.js
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 21:22:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sitetest=ddd.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('sitetest=ddd.js')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sitetest=ddd.js
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 21:24:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sitetest=ddd.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('sitetest=ddd.js')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sitetest=ddd.js
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 21:24:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sitetest=ddd.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('sitetest=ddd.js')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sitetest=ddd.js
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 21:24:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sitetest=ddd.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('sitetest=ddd.js')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sitetest=ddd.js
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 21:25:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sitetest=ddd.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('sitetest=ddd.js')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sitetest=ddd.js
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 21:25:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sitetest=ddd.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('sitetest=ddd.js')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sitetest=ddd.js
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 21:26:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sitetest=ddd.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('sitetest=ddd.js')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sitetest=ddd.js
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 21:26:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sitetest=ddd.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('sitetest=ddd.js')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sitetest=ddd.js
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 21:26:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sitetest=ddd.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('sitetest=ddd.js')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sitetest=ddd.js
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 21:26:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "sitetest=ddd.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('sitetest=ddd.js')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/sitetest=ddd.js
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 21:34:23 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\wamp\web\plan\framework\web\CController.php:336
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\web\plan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\web\plan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\wamp\web\plan\framework\web\CWebApplication.php(282): CController->run('')
+#4 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('site')
+#5 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\wamp\web\plan\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/site?test=ddd&ddd=dddddd
+---
+2015/01/16 21:34:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/admin/article_system/error.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('js/admin/articl...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/admin/article_system/error.js
+HTTP_REFERER=http://plan.hkoudai.com/site?test=ddd&ddd=dddddd
+---
+2015/01/16 21:36:02 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in D:\wamp\web\plan\framework\web\CController.php:336
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\web\plan\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\web\plan\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 D:\wamp\web\plan\framework\web\CWebApplication.php(282): CController->run('')
+#4 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('site')
+#5 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\wamp\web\plan\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/site
+---
+2015/01/16 21:36:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/admin/article_system/error.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('js/admin/articl...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/admin/article_system/error.js
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 21:36:15 [error] [php] Undefined variable: test (D:\wamp\web\plan\protected\controllers\SiteController.php:64)
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\web\plan\framework\web\CController.php(286): SiteController->runAction()
+#3 D:\wamp\web\plan\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#4 D:\wamp\web\plan\framework\web\CWebApplication.php(282): SiteController->run()
+#5 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/site
+2015/01/16 21:36:16 [error] [php] Undefined variable: test (D:\wamp\web\plan\protected\controllers\SiteController.php:64)
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#2 D:\wamp\web\plan\framework\web\CController.php(286): SiteController->runAction()
+#3 D:\wamp\web\plan\framework\web\CController.php(265): SiteController->runActionWithFilters()
+#4 D:\wamp\web\plan\framework\web\CWebApplication.php(282): SiteController->run()
+#5 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#6 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#7 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/site
+2015/01/16 21:56:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/01/16 21:56:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "favicon.ico".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+---
+2015/01/16 22:18:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "style/js/plugin/Ajax.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('style/js/plugin...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/style/js/plugin/Ajax.js
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 22:18:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "style/js/plugin/DataManager.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('style/js/plugin...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/style/js/plugin/DataManager.js
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 22:18:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "style/js/plugin/Ajax.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('style/js/plugin...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/style/js/plugin/Ajax.js
+---
+2015/01/16 22:18:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "js/admin/article_system/error.js".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('js/admin/articl...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/js/admin/article_system/error.js
+HTTP_REFERER=http://plan.hkoudai.com/style/js/plugin/Ajax.js
+---
+2015/01/16 22:19:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "main/index/update".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('main/index/upda...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/main/index/update
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 22:19:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "style/images/loading.gif".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('style/images/lo...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/style/images/loading.gif
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 22:20:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "style/images/loading.gif".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('style/images/lo...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/style/images/loading.gif
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 22:20:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "style/images/loading.gif".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('style/images/lo...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/style/images/loading.gif
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 22:20:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "style/images/loading.gif".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('style/images/lo...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/style/images/loading.gif
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 22:21:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "style/images/loading.gif".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('style/images/lo...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/style/images/loading.gif
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 22:21:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "style/images/loading.gif".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('style/images/lo...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/style/images/loading.gif
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 22:21:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "style/images/loading.gif".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('style/images/lo...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/style/images/loading.gif
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 22:23:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "style/images/loading.gif".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('style/images/lo...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/style/images/loading.gif
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 22:23:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "style/images/loading.gif".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('style/images/lo...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/style/images/loading.gif
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 22:23:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "style/images/loading.gif".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('style/images/lo...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/style/images/loading.gif
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 22:23:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "style/images/loading.gif".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('style/images/lo...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/style/images/loading.gif
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 22:23:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "style/images/loading.gif".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('style/images/lo...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/style/images/loading.gif
+HTTP_REFERER=http://plan.hkoudai.com/site
+---
+2015/01/16 22:24:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "style/images/loading.gif".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('style/images/lo...')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/style/images/loading.gif
+HTTP_REFERER=http://plan.hkoudai.com/site
+---

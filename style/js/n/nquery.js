@@ -12,13 +12,13 @@ jQuery.fn.outerHtml =  function(){
 /**
 *	向html中插入数据
 *@param jsonData json对象（数据库数据）
-*@param before 延伸类型，空为后延伸，为“before”是前延伸
+*@param before 延伸类型，空为后延伸，为“_before”是前延伸
 *@param repeatHTMLtype 预留嵌套插入数据起冲突，默认为空
 *@attr action ajax提交目标页面
 *@model 
 *	<div action="main/index">
 *		<div>test</div><!--不循环-->
-*		<div class="rpeatHTML">
+*		<div class="repeatHTML">
 *			<span>{id}</span>
 *			<span>{title}</span>
 *		</div>
@@ -34,7 +34,7 @@ jQuery.fn.insertData = function(jsonData,repeatHTMLtype,before){
 	var $_this = $(this);
 	var removeHtml_obj = "repeatHTML" + repeatHTMLtype + before;
 	var child = $("."+removeHtml_obj,$_this);
-	
+	// console.log("."+removeHtml_obj);
 	child.show();
 	child.removeClass(removeHtml_obj);
 	child.addClass("removeHtml");//数据循环元素，第二次循环要移除的标识

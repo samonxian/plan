@@ -60,11 +60,45 @@ class SiteController extends Controller
 	/**
 	 * Displays the login page
 	 */
-	public function actionIndex()
-	{
-		$this->layout = "";
-		$this->render("index");
+	public function actionIndex($data=null){
+		if($data){
+			$this->layout = "";
+			$data = array(
+				array(
+					"name"=>"冼善南",
+					"nick"=>"燕子南飞",
+				),
+				array(
+					"name"=>"冼善南dd",
+					"nick"=>"燕子南飞dd",
+				),
+
+			);	
+			for($i=0;$i<10000;$i++){
+				$data[] = array(
+					"name"=>"冼善南dd",
+					"nick"=>"燕子南飞dd",
+				);
+			}
+			echo json_encode($data);
+			// echo $this->createSeaJsModel($data);
+		}else{			
+			$this->layout = "";
+			$this->render("index");
+		}
 	}
+
+	public function actionTest(){
+		
+	}
+
+	public function createSeaJsModel($data){
+		$head = "define(function(require, exports, module) {";
+		$body = "exports.data =" . json_encode($data) . ";";
+		$foot = "});";
+		return $head . $body . $foot;
+	}
+
 	/**
 	 * Displays the login page
 	 */

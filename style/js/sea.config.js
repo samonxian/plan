@@ -5,7 +5,7 @@
 seajs.config({
     base: '/',
     paths: {
-        'n': 'style/js/n',
+    	'n': 'style/js/n',
         'other': 'style/js/other',
         'plugin': 'style/js/plugin'
     }

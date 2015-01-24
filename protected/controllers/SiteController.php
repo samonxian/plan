@@ -74,7 +74,7 @@ class SiteController extends Controller
 				),
 
 			);	
-			for($i=0;$i<10000;$i++){
+			for($i=0;$i<100;$i++){
 				$data[] = array(
 					"name"=>"冼善南dd",
 					"nick"=>"燕子南飞dd",

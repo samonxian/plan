@@ -10,6 +10,16 @@
         return false;
     },
     /**
+    *   url是否带#号参数
+    *@param url 网址
+    */
+    isWithSpecailParams : function(url){
+        if(url.indexOf("#") != -1){
+            return true;
+        };
+        return false;
+    },
+    /**
     *   打开加载层
     */
     openLoading : function(msg){

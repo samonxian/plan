@@ -9,11 +9,21 @@
     */
     createUrl :  function(params){
         if(params == undefined) params = {};
-        params = $.extend({data : "data"},params);
-        if(ns.bit.util.isHasParams(this.pageUrl)){
-            this.targetUrl = this.pageUrl + "&" + $.param(params);
+        params = $.extend({ajax : "data"},params);
+        //url带#号
+        if(ns.bit.util.isWithSpecailParams(this.pageUrl)){
+            //url带?号
+            if(ns.bit.util.isHasParams(this.pageUrl)){
+                this.targetUrl = this.pageUrl.replace("#","&" + $.param(params)+"#");
+            }else{
+                this.targetUrl = this.pageUrl.replace("#","?" + $.param(params)+"#");
+            }            
         }else{
-            this.targetUrl = this.pageUrl + "?" + $.param(params);
+            if(ns.bit.util.isHasParams(this.pageUrl)){
+                this.targetUrl = this.pageUrl + "&" + $.param(params);
+            }else{
+                this.targetUrl = this.pageUrl + "?" + $.param(params);
+            }
         }
     },
     get : function(params,fn,type,timeout){
@@ -26,6 +36,8 @@
             _this.createUrl(params);
         }else if(typeof params == "string"){
             _this.targetUrl = params;
+        }else{
+            _this.createUrl(params);
         };               
         if(type == undefined ){
             type == "json";                    
@@ -85,14 +97,15 @@
             this.createUrl(params);
         }else if(typeof params == "string"){
             _this.targetUrl = params;
-        };
+        }else{
+            _this.createUrl(params);
+        };  
         if(type == undefined ){
             type == "json";                    
         };
         if(timeout == undefined ){
             timeout == 5000;                    
         };
-
         var ajax = {
             type : 'post',
             data : data,

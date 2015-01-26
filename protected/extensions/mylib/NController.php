@@ -63,6 +63,13 @@ class NController extends Controller{
         public function myredirect($view,$params=array()){
             $url = $this->id . '/' .$view;
             $this->redirect(Yii::app()->createUrl($url,$params));
+        }        
+        /**
+        *   保存ajax生成的PHP文件
+        */
+        public function actionSaveToPhp(){
+            $this->layout = "";
+
         }
         
         

@@ -21,18 +21,23 @@ class StyleController extends Controller
 			),
 		);
 	}
+	/**
+	*	åˆå¹¶å¤šä¸ªjsï¼ŒåŽ»æŽ‰å¤šä½™çš„æ³¨é‡Šã€æ¢è¡Œã€ç©ºæ ¼ç­‰
+	*/
 	public function actionCombine(){
-		$host = $_SERVER['HTTP_HOST'];//»ñÈ¡ÓòÃû
-		$in =  $_SERVER['REQUEST_URI'];//»ñÈ¡´¦ÓòÃûÍâµÄÆäËûurl
-		$in = str_replace("=", "=http://".$host, $in);//²åÈëÓòÃû
+		$host = $_SERVER['HTTP_HOST'];//èŽ·å–åŸŸå
+		$in =  $_SERVER['REQUEST_URI'];//èŽ·å–å¤„åŸŸåå¤–çš„å…¶ä»–url
+		$in = str_replace("=", "=http://".$host, $in);//æ’å…¥åŸŸå
 		$ins = explode("=", $in);		
-		unset($ins[0]);//È¥µôµÚÒ»¸ö
+		unset($ins[0]);//åŽ»æŽ‰ç¬¬ä¸€ä¸ª
 		$contents = "";
 		foreach ($ins as $key => $value) {
-			$contents .= file_get_contents($value);
+			$contents .= file_get_contents($value);			
 		}		
 		if(strstr($in,"debug")){
 			$contents = JSMin::minify($contents);
+			$contents = str_replace("}\n", "};", $contents);
+			$contents = str_replace("\n", "", $contents);
 		}
 		echo $contents;
 	}

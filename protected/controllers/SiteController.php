@@ -1,6 +1,6 @@
 <?php
 
-class SiteController extends Controller
+class SiteController extends NController
 {
 	public $layout='admin_login';
 
@@ -60,26 +60,14 @@ class SiteController extends Controller
 	/**
 	 * Displays the login page
 	 */
-	public function actionIndex($data=null){
-		if($data){
+	public function actionIndex($ajax=null){
+		$dataProvider = new JSonActiveDataProvider("Test",array(
+			
+		));
+		$data = $dataProvider->getArrayData();
+		$data["ns_test"] = $data;		
+		if(isset($ajax)){
 			$this->layout = "";
-			$data = array(
-				array(
-					"name"=>"冼善南",
-					"nick"=>"燕子南飞",
-				),
-				array(
-					"name"=>"冼善南dd",
-					"nick"=>"燕子南飞dd",
-				),
-
-			);	
-			for($i=0;$i<100;$i++){
-				$data[] = array(
-					"name"=>"冼善南dd",
-					"nick"=>"燕子南飞dd",
-				);
-			}
 			echo json_encode($data);
 			// echo $this->createSeaJsModel($data);
 		}else{			

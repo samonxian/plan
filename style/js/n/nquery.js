@@ -67,26 +67,18 @@ jQuery.fn.insertData = function(jsonData,repeatHTMLtype,before){
 		parent.before(repeatHTMLclone.html());//前面延伸
 	}
 	//储存repeatHTML,以便以后使用 -->
-	var htmlData = parent.html();
-	
+	var htmlData = parent.html();	
 	var result = '';
 	var fields = [];
 	var field_name;
 	for(var i in jsonData){
-		result += htmlData.replace(/\{([^}]+)\}/ig, function(){
+		result += htmlData.replace(/\{\$([^}]+)\}/ig, function(){
 			field_name = arguments[1];
-			var data;
-			if(field_name=="message"||field_name=="comment") {
-				data =  AnalyticEmotion(jsonData[i][field_name]);
-			}else{
-				data = jsonData[i][field_name];
-			}
+			var data = jsonData[i][field_name];			
 			return data;
 		}); 
 		
-	}
-	
-	
+	}	
 	parent.replaceWith(result);
 }
 /**

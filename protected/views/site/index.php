@@ -33,6 +33,9 @@
             border-radius: 6px;
             display: none;
         }
+        .repeatHTML{
+            display: none;
+        }
     </style>
     
 </head>
@@ -46,30 +49,22 @@
         // $auth->createOperation('updatePost','update a post');
         // $auth->createOperation('deletePost','delete a post');
     ?>
-    <a href="#myModal" role="button" class="btn" data-toggle="modal">查看演示案例</a>
-    <div>
-        <div id="test" action="main/index">
-            <div>test</div><!--不循环-->
-            <div class="repeatHTML">
-                <span>{nick}</span>
-                <span>{name}</span>
-            </div>
-        </div> 
-    </div>
-    <div class="repeatHTML">
-        <span>{nick}</span>
-        <span>{name}</span>
-    </div>
+    
+    <table id="ns_test" class="table">
+        <tr class="repeatHTML">
+            <td>{$title}</td>
+            <td>{$about_src}</td>
+        </tr>
+    </table>   
     <!-- Modal -->
     
     
     <script src="/style/js/other/jquery/jquery.js"></script>
     <script src="/style/js/other/bootstrap/bootstrap.min.js"></script>
-    <script src="/style/js/sea.js"></script>
-    <script src="/style/js/n/nquery.js"></script>
+    <script src="/style/js/sea.js"></script>    
     
     <script>
-        var bits = ["bit","bit.util","bit.http"];
+        var bits = ["nquery","bit","bit.util","bit.http","bit.tophp"];
         var url = "";
         for(var i in bits){
             bit = "/style/js/n/" + bits[i] + ".js";
@@ -78,9 +73,10 @@
         url = "/style/combine/"+url;
         seajs.use(url,function(){                       
             $$.debug = true;
-            bhttp.selector = $("#test");
+            bhttp.selector = $("#ns_test");
             bhttp.get(function(json,obj){                                               
-                obj.selector.insertData(json);
+                obj.selector.insertData(json.ns_test.data);
+                ns.bit.tophp.listViewDoms["#ns_test"] = "";
             },"json");
         });             
     </script>

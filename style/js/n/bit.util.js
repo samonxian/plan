@@ -25,9 +25,9 @@
     openLoading : function(msg){
         var id = "loading_" +　Math.floor(Math.random(10000000) * 10000000).toString();
         if(msg){
-            var html = '<div id="'+ id +'" class="c_ajax_loading">' + msg +'</div>';
+            var html = '<div id="'+ id +'" class="c_ajax_loading create_php_for_remove">' + msg +'</div>';
         }else{
-            var html = '<div id="'+ id +'" class="c_ajax_loading">玩命加载中</div>';
+            var html = '<div id="'+ id +'" class="c_ajax_loading create_php_for_remove">玩命加载中</div>';
         };
         $("body").append(html);
         var obj = $("#"+id);

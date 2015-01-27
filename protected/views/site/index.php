@@ -36,6 +36,12 @@
         .repeatHTML{
             display: none;
         }
+        .modal-footer {
+            padding: 5px;
+        }
+        .modal-content{
+            top:150px;
+        }
     </style>
     
 </head>
@@ -50,21 +56,24 @@
         // $auth->createOperation('deletePost','delete a post');
     ?>
     
-    <table id="ns_test" class="table">
+    <table id="ns_test" class="table table-bordered">
         <tr class="repeatHTML">
-            <td>{$title}</td>
-            <td>{$about_src}</td>
+            <td>{$user}</td>
+            <td>{$pwd}</td>
         </tr>
-    </table>   
-    <!-- Modal -->
-    
-    
-    <script src="/style/js/other/jquery/jquery.js"></script>
+    </table> 
+    <table id="ns_test2" class="table table-bordered">
+        <tr class="repeatHTML">
+            <td>{$user}</td>
+            <td>{$pwd}</td>
+        </tr>
+    </table>     
+    <script src="/style/js/other/jquery/jquery-1.11.2.min.js"></script>
     <script src="/style/js/other/bootstrap/bootstrap.min.js"></script>
     <script src="/style/js/sea.js"></script>    
     
-    <script>
-        var bits = ["nquery","bit","bit.util","bit.http","bit.tophp"];
+    <script class="create_php_for_remove">
+        var bits = ["nquery","bit","bit.util","bit.http","bit.tophp","bit.msg"];
         var url = "";
         for(var i in bits){
             bit = "/style/js/n/" + bits[i] + ".js";
@@ -72,11 +81,13 @@
         }
         url = "/style/combine/"+url;
         seajs.use(url,function(){                       
-            $$.debug = true;
-            bhttp.selector = $("#ns_test");
-            bhttp.get(function(json,obj){                                               
-                obj.selector.insertData(json.ns_test.data);
-                ns.bit.tophp.listViewDoms["#ns_test"] = "";
+            $$.debug = false;
+            bHttp.selector = $("#ns_test");
+            bHttp.get(function(json,obj){                                               
+                $("#ns_test").insertData(json.ns_test.data);
+                $("#ns_test2").insertData(json.ns_test.data);
+                bPhp.listViewDoms["#ns_test"] = "";
+                bPhp.listViewDoms["#ns_test2"] = "";
             },"json");
         });             
     </script>

@@ -52,6 +52,9 @@
             url : _this.targetUrl,
             success : function(json){
                 if(typeof fn == "function") {
+                    if(json.path != undefined) {
+                        ns.bit.path = json.path;
+                    }
                     fn(json,_this);
                 };
                 if(ns.bit.debug){
@@ -62,7 +65,7 @@
                     var clear =  setTimeout(function() {
                         ns.bit.util.closeLoading();
                         clearTimeout(clear);
-                    },4000);
+                    },2000);
                     console.timeEnd(_this.selector.selector);
                 }else{
                     ns.bit.util.closeLoading();
@@ -124,7 +127,7 @@
                     var clear =  setTimeout(function() {
                         ns.bit.util.closeLoading();
                         clearTimeout(clear);
-                    },4000);
+                    },2000);
                     console.timeEnd(_this.selector.selector);
                 }else{
                     ns.bit.util.closeLoading();
@@ -142,4 +145,4 @@
         return this;
     }
 };
-bhttp = ns.bit.http;
+bHttp = ns.bit.http;

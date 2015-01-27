@@ -8,9 +8,10 @@ ns.bit.tophp = {
     */
     init : function(){
         var _this = this;
-        this.nav();        
-        $("#"+this.createBtnId).click(function(){            
-            _this.save();
+        this.nav();     
+        $("#"+this.createBtnId).click(function(){    
+            _this.save(); 
+            _this.temp_html = "";
         });
     },
     /**
@@ -19,12 +20,13 @@ ns.bit.tophp = {
     nav : function(){
         this.createBtnId = this.createBtnId + Math.floor(Math.random(10000)*10000000);
         this.navId = this.navId + Math.floor(Math.random(10000)*10000000);
-        var html = '<div class="navbar navbar-inverse navbar-fixed-top '+ this.navId +'">';
-        html += '<div class="navbar-inner">';
-        html += '<a class="brand" href="javascript:void(0);">生成对应PHP</a>';
-        html += '<a id="'+this.createBtnId+'" class="btn btn-primary " href="javascript:void(0);" style="float:right;">生成</a>';
-        html += '</div>';  
-        html += '</div>';
+        var html = '<nav class="navbar navbar-default '+ this.navId +'">';
+        html += '<div class="container-fluid">';
+        html += '<a class="navbar-brand" href="javascript:void(0);">生成对应PHP</a>';
+        html += '<ul class="nav navbar-nav navbar-right"><li>';
+        html += '<a id="'+this.createBtnId+'" class="btn btn-default" href="javascript:void(0);" style="float:right;">生成</a>';
+        html += '</li></ul></div>';  
+        html += '</nav>';
         $("body").before(html);        
     },
     /**
@@ -32,11 +34,12 @@ ns.bit.tophp = {
     */
     styleHtml : function(){
         this.temp_html.find("." + this.navId).remove();
+        this.temp_html.find(".create_php_for_remove").remove();
         var html = "<!DOCTYPE html>\n";
         html += "<html>\n";
         html += this.temp_html.html();
         html += "\n</html>";
-        console.log(html);
+        // console.log(html);
         return html;
     },
     /**
@@ -51,13 +54,16 @@ ns.bit.tophp = {
             var temp_html = this.temp_html;
         }        
         var convertDom = temp_html.find(dom_id).find(".repeatHTML");
-        var convertHtml = temp_html.find(dom_id).find(".repeatHTML").html();
+        var convertDomClone = convertDom.clone();
+        convertDomClone.removeClass("repeatHTML");
+        convertDomClone.show();
+        var convertHtml = convertDomClone.outerHtml();
         var php = "\n<?php \n";
         var result = convertHtml.replace(/\{\$([^}]+)\}/ig, function(){
             field_name = arguments[1];    
             return "<?php echo $d['"+field_name+"'];?>";
         });        
-        php += "    foreach($data['"+temp_html.find(dom_id).attr("id")+"'] as $d){ ?>";
+        php += "    foreach($data['"+temp_html.find(dom_id).attr("id")+"']['data'] as $d){ ?>";
         php += result + "\n";
         php += "<?php \n    }\n?>\n";
         if(ns.bit.debug){  
@@ -78,13 +84,13 @@ ns.bit.tophp = {
         if(ns.bit.debug){            
             console.debug("------------------------ListView");
         }
-        var data = {};
+        var data = {path : ns.bit.path};
         data.html = this.styleHtml();   
         ns.bit.http.post("/site/savetophp",data,function(json){
-            
-        });     
+            bMsg.alert(json.msg);
+        },"json");     
     }
 }
-bphp = ns.bit.tophp;
 //初始化
-bphp.init();
+ns.bit.tophp.init();
+bPhp = ns.bit.tophp;

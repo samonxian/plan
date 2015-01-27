@@ -2,7 +2,7 @@
 
 class SiteController extends NController
 {
-	public $layout='admin_login';
+	public $layouts='admin_login';
 
 	/**
 	 * Declares class-based actions.
@@ -60,19 +60,31 @@ class SiteController extends NController
 	/**
 	 * Displays the login page
 	 */
-	public function actionIndex($ajax=null){
-		$dataProvider = new JSonActiveDataProvider("Test",array(
-			
+	public function actionIndex(){
+		$dataProvider = new JSonActiveDataProvider("Admin",array(
+			"criteria"=>array(
+				
+			),
+			"pagination"=>array(
+				"pageSize"=>10,
+			),
 		));
 		$data = $dataProvider->getArrayData();
-		$data["ns_test"] = $data;		
-		if(isset($ajax)){
-			$this->layout = "";
-			echo json_encode($data);
-			// echo $this->createSeaJsModel($data);
-		}else{			
-			$this->layout = "";
-			$this->render("index");
+		$this->ajaxData = array(
+			"ns_test"=>$data,
+			"ns_test2"=>$data,
+		);		
+		if(isset($_GET["ajax"])){					
+			AjaxStatus::set(AjaxStatus::SUCCESS);
+		}else{	
+			if(isset($_GET["create"])){
+				$this->render("index");
+			}else{				
+				$this->render("index_temp",array(
+					"data"=>$this->ajaxData,
+				));
+			}		
+			
 		}
 	}
 

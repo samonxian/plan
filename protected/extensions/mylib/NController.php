@@ -63,13 +63,24 @@ class NController extends Controller{
         public function myredirect($view,$params=array()){
             $url = $this->id . '/' .$view;
             $this->redirect(Yii::app()->createUrl($url,$params));
-        }        
+        } 
+        public $ajaxData = array();       
         /**
         *   保存ajax生成的PHP文件
         */
         public function actionSaveToPhp(){
             $this->layout = "";
-
+            if($_POST["path"] != ""){
+                $this->ajaxData["path"] = $_POST["path"];
+                $contents = str_replace("<!--?php","<?php", $_POST["html"]);
+                $contents = str_replace("?-->", "?>", $contents);
+                $flag = file_put_contents($_POST["path"], $contents);
+                if($flag){
+                    AjaxStatus::set(AjaxStatus::SUCCESS);
+                }
+            }else{
+                AjaxStatus::set(AjaxStatus::PATH_NOT_SET);
+            }
         }
         
         

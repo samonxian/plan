@@ -14,6 +14,8 @@ class AjaxStatus {
                 );
                 if(isset($_GET["create"])){
                     $other["path"] = Yii::getPathOfAlias('application.views.'.$this->id.".".$this->action->id."_temp").".php";
+                    $other["targetUrl"] = Yii::app()->request->baseUrl . "/" .$this->id . "/" . $this->action->id;
+                    $other["saveUrl"] = Yii::app()->request->baseUrl . "/site/SaveToPhp";
                 }                
             break;
             case AjaxStatus::PATH_NOT_SET:                

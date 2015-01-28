@@ -1,11 +1,20 @@
 ;ns.bit.http = {
+    /**
+    *   当前url
+    */
     pageUrl : location.href,
+    /**
+    *   域名host
+    */
     host : location.host,
+    /**
+    *   请求的目标Url
+    */
     targetUrl : "",
     selector : "",    
     /**
     *   以当前的url为基础构建带参数的url
-    *@params url参数数组
+    *@param url参数数组
     */
     createUrl :  function(params){
         if(params == undefined) params = {};
@@ -26,6 +35,15 @@
             }
         }
     },
+    /**
+    *   ajax get请求
+    *@param [string|objcet] params url参数（可不填）
+    *@param [function] fn 请求成功回调函数（必填）
+    *   json [object] 返回的json对象
+    *   obj [object] ns.bit.http对象
+    *@param [string] type 请求返还类型（json,html,script等跟jquery ajax一样）（必填）
+    *@param [int] timeout 请求超时时间
+    */
     get : function(params,fn,type,timeout){
         var _this = this;
         if(typeof params == "function"){
@@ -51,10 +69,16 @@
             timeout : timeout,
             url : _this.targetUrl,
             success : function(json){
-                if(typeof fn == "function") {
-                    if(json.path != undefined) {
-                        ns.bit.path = json.path;
-                    }
+                if(json.path != undefined) {
+                    ns.bit.path = json.path;
+                }
+                if(json.targetUrl != undefined) {
+                    ns.bit.targetUrl = json.targetUrl;
+                }
+                if(json.saveUrl != undefined) {
+                    ns.bit.saveUrl = json.saveUrl;
+                }
+                if(typeof fn == "function") {                    
                     fn(json,_this);
                 };
                 if(ns.bit.debug){
@@ -82,6 +106,16 @@
         $.ajax(ajax);
         return this;
     },
+    /**
+    *   ajax post请求
+    *@param [string|objcet] params url参数（可不填）
+    *@param [object] data 提交的表单数据（可不填）
+    *@param [function] fn 请求成功回调函数（必填）
+    *   json [object] 返回的json对象
+    *   obj [object] ns.bit.http对象
+    *@param [string] type 请求返还类型（json,html,script等跟jquery ajax一样）（必填）
+    *@param [int] timeout 请求超时时间 
+    */
     post : function(params,data,fn,type,timeout){
         var _this = this;
         if(typeof data == "function"){
@@ -116,6 +150,15 @@
             timeout : timeout,
             url : _this.targetUrl,
             success : function(json){
+                if(json.path != undefined) {
+                    ns.bit.path = json.path;
+                }
+                if(json.targetUrl != undefined) {
+                    ns.bit.targetUrl = json.targetUrl;
+                }
+                if(json.saveUrl != undefined) {
+                    ns.bit.saveUrl = json.saveUrl;
+                }
                 if(typeof fn == "function") {
                     fn(json,_this);
                 };

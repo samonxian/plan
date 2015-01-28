@@ -11,7 +11,7 @@
     },
     /**
     *   url是否带#号参数
-    *@param url 网址
+    *@param [string] url 网址
     */
     isWithSpecailParams : function(url){
         if(url.indexOf("#") != -1){

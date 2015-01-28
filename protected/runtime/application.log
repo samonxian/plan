@@ -1556,3 +1556,133 @@ Stack trace:
 #9 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
 #10 D:\wamp\web\plan\index.php(13): CWebApplication->run()
 REQUEST_URI=/site
+2015/01/27 20:33:38 [error] [php] file_get_contents(http://plan.hkoudai.com/style/js/n/nquery.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+ (D:\wamp\web\plan\protected\controllers\StyleController.php:35)
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\wamp\web\plan\framework\web\CController.php(286): StyleController->runAction()
+#2 D:\wamp\web\plan\framework\web\CController.php(265): StyleController->runActionWithFilters()
+#3 D:\wamp\web\plan\framework\web\CWebApplication.php(282): StyleController->run()
+#4 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/style/combine/=/style/js/n/nquery.js=/style/js/n/bit.js=/style/js/n/bit.util.js=/style/js/n/bit.http.js=/style/js/n/bit.tophp.js=/style/js/n/bit.msg.js
+2015/01/27 20:33:39 [error] [php] file_get_contents(http://plan.hkoudai.com/style/js/n/nquery.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+ (D:\wamp\web\plan\protected\controllers\StyleController.php:35)
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\wamp\web\plan\framework\web\CController.php(286): StyleController->runAction()
+#2 D:\wamp\web\plan\framework\web\CController.php(265): StyleController->runActionWithFilters()
+#3 D:\wamp\web\plan\framework\web\CWebApplication.php(282): StyleController->run()
+#4 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/style/combine/=/style/js/n/nquery.js=/style/js/n/bit.js=/style/js/n/bit.util.js=/style/js/n/bit.http.js=/style/js/n/bit.tophp.js=/style/js/n/bit.msg.js
+2015/01/27 20:33:40 [error] [php] file_get_contents(http://plan.hkoudai.com/style/js/n/nquery.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+ (D:\wamp\web\plan\protected\controllers\StyleController.php:35)
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\wamp\web\plan\framework\web\CController.php(286): StyleController->runAction()
+#2 D:\wamp\web\plan\framework\web\CController.php(265): StyleController->runActionWithFilters()
+#3 D:\wamp\web\plan\framework\web\CWebApplication.php(282): StyleController->run()
+#4 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/style/combine/=/style/js/n/nquery.js=/style/js/n/bit.js=/style/js/n/bit.util.js=/style/js/n/bit.http.js=/style/js/n/bit.tophp.js=/style/js/n/bit.msg.js
+2015/01/27 20:33:42 [error] [php] file_get_contents(http://plan.hkoudai.com/style/js/n/nquery.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+ (D:\wamp\web\plan\protected\controllers\StyleController.php:35)
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\wamp\web\plan\framework\web\CController.php(286): StyleController->runAction()
+#2 D:\wamp\web\plan\framework\web\CController.php(265): StyleController->runActionWithFilters()
+#3 D:\wamp\web\plan\framework\web\CWebApplication.php(282): StyleController->run()
+#4 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/style/combine/=/style/js/n/nquery.js=/style/js/n/bit.js=/style/js/n/bit.util.js=/style/js/n/bit.http.js=/style/js/n/bit.tophp.js=/style/js/n/bit.msg.js
+2015/01/27 20:33:46 [error] [php] file_get_contents(http://plan.hkoudai.com/style/js/n/nquery.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+ (D:\wamp\web\plan\protected\controllers\StyleController.php:35)
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\wamp\web\plan\framework\web\CController.php(286): StyleController->runAction()
+#2 D:\wamp\web\plan\framework\web\CController.php(265): StyleController->runActionWithFilters()
+#3 D:\wamp\web\plan\framework\web\CWebApplication.php(282): StyleController->run()
+#4 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/style/combine/=/style/js/n/nquery.js=/style/js/n/bit.js=/style/js/n/bit.util.js=/style/js/n/bit.http.js=/style/js/n/bit.tophp.js=/style/js/n/bit.msg.js
+2015/01/27 20:33:47 [error] [php] file_get_contents(http://plan.hkoudai.com/style/js/n/nquery.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+ (D:\wamp\web\plan\protected\controllers\StyleController.php:35)
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\wamp\web\plan\framework\web\CController.php(286): StyleController->runAction()
+#2 D:\wamp\web\plan\framework\web\CController.php(265): StyleController->runActionWithFilters()
+#3 D:\wamp\web\plan\framework\web\CWebApplication.php(282): StyleController->run()
+#4 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/style/combine/=/style/js/n/nquery.js=/style/js/n/bit.js=/style/js/n/bit.util.js=/style/js/n/bit.http.js=/style/js/n/bit.tophp.js=/style/js/n/bit.msg.js
+2015/01/27 20:33:54 [error] [php] file_get_contents(http://plan.hkoudai.com/style/js/n/nquery.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+ (D:\wamp\web\plan\protected\controllers\StyleController.php:35)
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\wamp\web\plan\framework\web\CController.php(286): StyleController->runAction()
+#2 D:\wamp\web\plan\framework\web\CController.php(265): StyleController->runActionWithFilters()
+#3 D:\wamp\web\plan\framework\web\CWebApplication.php(282): StyleController->run()
+#4 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/style/combine/=/style/js/n/nquery.js=/style/js/n/bit.js=/style/js/n/bit.util.js=/style/js/n/bit.http.js=/style/js/n/bit.tophp.js=/style/js/n/bit.msg.js
+2015/01/27 20:34:04 [error] [php] file_get_contents(http://plan.hkoudai.com/style/js/n/nquery.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+ (D:\wamp\web\plan\protected\controllers\StyleController.php:35)
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\wamp\web\plan\framework\web\CController.php(286): StyleController->runAction()
+#2 D:\wamp\web\plan\framework\web\CController.php(265): StyleController->runActionWithFilters()
+#3 D:\wamp\web\plan\framework\web\CWebApplication.php(282): StyleController->run()
+#4 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/style/combine/=/style/js/n/nquery.js=/style/js/n/bit.js=/style/js/n/bit.util.js=/style/js/n/bit.http.js=/style/js/n/bit.tophp.js=/style/js/n/bit.msg.js
+2015/01/27 20:34:33 [error] [php] file_get_contents(http://plan.hkoudai.com/style/js/n/nquery.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+ (D:\wamp\web\plan\protected\controllers\StyleController.php:35)
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\wamp\web\plan\framework\web\CController.php(286): StyleController->runAction()
+#2 D:\wamp\web\plan\framework\web\CController.php(265): StyleController->runActionWithFilters()
+#3 D:\wamp\web\plan\framework\web\CWebApplication.php(282): StyleController->run()
+#4 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/style/combine/=/style/js/n/nquery.js=/style/js/n/bit.js=/style/js/n/bit.util.js=/style/js/n/bit.http.js=/style/js/n/bit.tophp.js=/style/js/n/bit.msg.js
+2015/01/27 20:34:35 [error] [php] file_get_contents(http://plan.hkoudai.com/style/js/n/nquery.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+ (D:\wamp\web\plan\protected\controllers\StyleController.php:35)
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\wamp\web\plan\framework\web\CController.php(286): StyleController->runAction()
+#2 D:\wamp\web\plan\framework\web\CController.php(265): StyleController->runActionWithFilters()
+#3 D:\wamp\web\plan\framework\web\CWebApplication.php(282): StyleController->run()
+#4 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/style/combine/=/style/js/n/nquery.js=/style/js/n/bit.js=/style/js/n/bit.util.js=/style/js/n/bit.http.js=/style/js/n/bit.tophp.js=/style/js/n/bit.msg.js
+2015/01/27 20:34:36 [error] [php] file_get_contents(http://plan.hkoudai.com/style/js/n/nquery.js) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: 由于连接方在一段时间后没有正确答复或连接的主机没有反应，连接尝试失败。
+ (D:\wamp\web\plan\protected\controllers\StyleController.php:35)
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 D:\wamp\web\plan\framework\web\CController.php(286): StyleController->runAction()
+#2 D:\wamp\web\plan\framework\web\CController.php(265): StyleController->runActionWithFilters()
+#3 D:\wamp\web\plan\framework\web\CWebApplication.php(282): StyleController->run()
+#4 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#6 D:\wamp\web\plan\index.php(13): CWebApplication->run()
+REQUEST_URI=/style/combine/=/style/js/n/nquery.js=/style/js/n/bit.js=/style/js/n/bit.util.js=/style/js/n/bit.http.js=/style/js/n/bit.tophp.js=/style/js/n/bit.msg.js
+2015/01/27 20:56:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "n/SaveToPhp".' in D:\wamp\web\plan\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wamp\web\plan\framework\web\CWebApplication.php(141): CWebApplication->runController('n/SaveToPhp')
+#1 D:\wamp\web\plan\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wamp\web\plan\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/n/SaveToPhp
+HTTP_REFERER=http://plan.hkoudai.com/site?create=php
+---

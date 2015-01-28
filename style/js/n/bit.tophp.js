@@ -71,6 +71,9 @@ ns.bit.tophp = {
         }
         convertDom.parent().html(php);
     },
+    /**
+    *   通过生成按钮
+    */
     save : function(){
         if(ns.bit.debug){
             console.debug("ListView------------------------");
@@ -86,8 +89,10 @@ ns.bit.tophp = {
         }
         var data = {path : ns.bit.path};
         data.html = this.styleHtml();   
-        ns.bit.http.post("/site/savetophp",data,function(json){
-            bMsg.alert(json.msg);
+        ns.bit.http.post(ns.bit.saveUrl,data,function(json){
+            bMsg.alert(json.msg,function(){
+                window.open(ns.bit.targetUrl);
+            });
         },"json");     
     }
 }

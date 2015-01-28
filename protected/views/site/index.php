@@ -48,14 +48,12 @@
 
 <body>
     <?php
-        $auth=Yii::app()->authManager;
-        
+        $auth=Yii::app()->authManager;        
         // $auth->createOperation('createPost','create a post');
         // $auth->createOperation('readPost','read a post');
         // $auth->createOperation('updatePost','update a post');
         // $auth->createOperation('deletePost','delete a post');
-    ?>
-    
+    ?>    
     <table id="ns_test" class="table table-bordered">
         <tr class="repeatHTML">
             <td>{$user}</td>
@@ -82,10 +80,9 @@
         url = "/style/combine/"+url;
         seajs.use(url,function(){                       
             $$.debug = false;
-            bHttp.selector = $("#ns_test");
-            bHttp.get(function(json,obj){                                               
+            bHttp.get(function(json){                                               
                 $("#ns_test").insertData(json.ns_test.data);
-                $("#ns_test2").insertData(json.ns_test.data);
+                $("#ns_test2").insertData(json.ns_test2.data);
                 bPhp.listViewDoms["#ns_test"] = "";
                 bPhp.listViewDoms["#ns_test2"] = "";
             },"json");

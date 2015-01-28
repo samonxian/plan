@@ -7,7 +7,7 @@ class StyleController extends Controller
 	/**
 	 * Declares class-based actions.
 	 */
-	public function actions()	{
+	public function actions(){
 		return array(
 			// captcha action renders the CAPTCHA image displayed on the contact page
 			'captcha'=>array(
@@ -22,14 +22,14 @@ class StyleController extends Controller
 		);
 	}
 	/**
-	*	åˆå¹¶å¤šä¸ªjsï¼ŒåŽ»æŽ‰å¤šä½™çš„æ³¨é‡Šã€æ¢è¡Œã€ç©ºæ ¼ç­‰
+	*	ºÏ²¢¶à¸öjs£¬È¥µô¶àÓàµÄ×¢ÊÍ¡¢»»ÐÐ¡¢¿Õ¸ñµÈ
 	*/
 	public function actionCombine(){
-		$host = $_SERVER['HTTP_HOST'];//èŽ·å–åŸŸå
-		$in =  $_SERVER['REQUEST_URI'];//èŽ·å–å¤„åŸŸåå¤–çš„å…¶ä»–url
-		$in = str_replace("=", "=http://".$host, $in);//æ’å…¥åŸŸå
+		$host = $_SERVER['HTTP_HOST'];//»ñÈ¡ÓòÃû
+		$in =  $_SERVER['REQUEST_URI'];//»ñÈ¡´¦ÓòÃûÍâµÄÆäËûurl
+		$in = str_replace("=", "=http://".$host, $in);//²åÈëÓòÃû
 		$ins = explode("=", $in);		
-		unset($ins[0]);//åŽ»æŽ‰ç¬¬ä¸€ä¸ª
+		unset($ins[0]);//È¥µôµÚÒ»¸ö
 		$contents = "";
 		foreach ($ins as $key => $value) {
 			$contents .= file_get_contents($value);			
